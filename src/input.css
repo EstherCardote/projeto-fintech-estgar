@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    /* Criando as cores personalizadas do projeto Estgar */
+    --color-estgar-bege: #f1e3d3;
+    --color-estgar-bege-escuro: #f2d0a9;
+    --color-estgar-roxo: #8e7dbe;
+    --color-estgar-verde: #99c1b9;
+}

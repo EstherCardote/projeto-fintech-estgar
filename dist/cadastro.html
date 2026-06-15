@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- A linha abaixo Diz ao celular para não diminuir o site para caber na tela, mas sim usar a largura real do aparelho e o zoom em 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Nova Conta - Estgar</title>
+    <!-- Link para o CSS gerado pelo Tailwind -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex items-center justify-center p-4">
+    <main class="bg-white w-full max-w-6xl rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.1)] flex overflow-hidden h-[90vh]">
+
+        <!-- LADO ESQUERDO (Institucional: Imagens e Textos) -->
+        <section class="hidden md:flex w-2/5 bg-estgar-bege-escuro p-12 flex-col items-center">
+
+            <div class="w-full flex justify-start">
+                <img src="./assets/images/LOGO_INTEIRO-SEM FUNDO.png" alt="Logo Estgar"
+                    class="h-24 w-auto object-contain">
+            </div>
+
+            <div class="flex-grow flex items-center justify-center w-full max-w-xs">
+                <img src="./assets/images/imagem-criar-conta.png" alt="Porquinho Financeiro"
+                    class="w-full h-auto object-contain">
+            </div>
+
+            <div class="text-center space-y-6 w-full max-w-sm">
+                <h2 class="text-2xl lg:text-4xl font-black text-estgar-roxo leading-tight">
+                    Sua jornada para o controle financeiro<br>Começa aqui.
+                </h2>
+                <p class="text-slate-700 text-sm lg:text-base font-medium px-4 opacity-90">
+                    Crie sua conta em segundos e visualize seu futuro financeiro.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- LADO DIREITO (Formulário com rolagem independente) -->
+        <section class="bg-estgar-bege w-full md:w-3/5 p-8 md:p-12 flex flex-col overflow-y-auto">
+            <div class="w-full max-w-2xl mx-auto">
+                <h1 class="text-3xl font-bold text-estgar-roxo mb-8 text-center md:text-center">Criar Nova Conta</h1>
+
+                <form class="space-y-8">
+                    <!-- SESSÃO: DADOS PESSOAIS -->
+                    <div class=space-y-4>
+                        <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Dados Pessoais</h2>
+
+                        <!-- Grid para colocar Nome e Sobrenome lado a lado -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Primeiro Nome</label>
+                                <input type="text"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Sobrenome</label>
+                                <input type="text"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                            </div>
+                        </div>
+                        <!-- Grid para CPF e Data de Nascimento -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">CPF</label>
+                                <input type="text" placeholder="000.000.000-00"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Data de
+                                    Nascimento</label>
+                                <input type="date"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-500 ">
+                            </div>
+                        </div>
+
+                        <!-- Opções de Sexo -->
+                        <div>
+                            <span class="block text-sm font-semibold text-slate-700 mb-2">Sexo</span>
+                            <div class="flex flex-wrap justify-between gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="sexo" value="feminino" class="w-4 h-4 accent-estgar-roxo">
+                                    <span class="text-sm text-slate-700">Feminino</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="sexo" value="masculino"
+                                        class="w-4 h-4 accent-estgar-roxo">
+                                    <span class="text-sm text-slate-700">Masculino</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="sexo" value="outro" class="w-4 h-4 accent-estgar-roxo">
+                                    <span class="text-sm text-slate-700">Outros</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SESSÃO: ACESSO -->
+                    <div class="space-y-4">
+                        <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Acesso</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
+                                <input type="email"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Confirmar E-mail</label>
+                                <input type="email"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SESSÃO: SEGURANÇA -->
+                    <div class="space-y-4">
+                        <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Segurança</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Senha</label>
+                                <input type="password"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Confirmar Senha</label>
+                                <input type="password"
+                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Pelo menos 8 caracteres, uma letra maiúscula e um número.
+                        </p>
+                    </div>
+                    <!-- TERMOS E BOTÃO -->
+                    <div class="pt-4">
+                        <label class="flex items-center gap-3 cursor-pointer mb-6">
+                            <input type="checkbox" class="w-5 h-5 accent-estgar-roxo rounded">
+                            <span class="text-sm text-slate-700">Aceito os <a href="#"
+                                    class="font-bold underline hover:text-estgar-roxo">Termos de Uso</a> e <a href="#"
+                                    class="font-bold underline hover:text-estgar-roxo">Política de
+                                    Privacidade</a></span>
+                        </label>
+                        <button type="submit"
+                            class="w-full bg-estgar-verde text-white font-bold text-lg p-4 rounded-xl hover:opacity-90 active:scale-[0.98] transicion-all shadow-sm">Criar
+                            Conta</button>
+                    </div>
+                </form>
+                <!-- LINK PARA LOGIN -->
+                <p class="text-center mt-8 text-sm text-slate-600">Já tem uma conta? <a href="index.html"
+                        class="text-estgar- font-bold hover:underline">Fazer Login</a></p>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
