@@ -1,4 +1,5 @@
-n<!DOCTYPE html>
+n
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -28,15 +29,17 @@ n<!DOCTYPE html>
             <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-8">Cadastrar Novo Cartão</h1>
             <form class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Apelido do Cartão -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-1">Apelido do Cartão</label>
                         <input type="text" placeholder="Ex: Cartão de Crédito"
-                            class="w-full p-3 border border-gray-600 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
+                    <!-- Bandeira do Cartão -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-1">Bandeira</label>
                         <select
-                            class="w-full p-3 border border-gray-600 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option>Mastercard</option>
                             <option>Visa</option>
                             <option>Elo</option>
@@ -44,31 +47,60 @@ n<!DOCTYPE html>
                     </div>
                 </div>
 
+                <!-- Vencimento e Limite -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Vencimento do Cartão -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-1">Vencimento do Cartão</label>
                         <input type="text" placeholder="MM/AA"
-                            class="w-full p-3 border border-gray-600 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
-
+                    <!-- Limite de crédito -->
                     <div>
                         <label class="block text-sm font-semibold text-slate-700 mb-1">Limite de Crédito</label>
                         <input type="text" placeholder="R$ 0,00"
-                            class="w-full p-3 border border-gray-600 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Melhor dia de Compra</label>
-                            <input type="number" placeholder="00" class="w-full p-3 border border-gray-600 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
-                        </div>
-                        <div></div>
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                 </div>
-            </form>
+
+                <!--Melhor Dia e Vencimento da Fatura-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Melhor dia de Compra -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Melhor dia de Compra</label>
+                        <input type="number" placeholder="00"
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <!-- Dia de Vencimento da Fatura -->
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Dia de Vencimento da
+                            Fatura</label>
+                        <input type="number" placeholder="00"
+                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                </div>
+                <!-- Ativar como cartão principal -->
+                <div class="bg-estgar-bege-escuro p-3 rounded-xl border border-gray-400 flex items-center justify-between mt-4">
+                    <div>
+                        <span class="block text-base font-bold text-slate-800">Ativar como Cartão Principal</span>
+                        <span class="text-sm text-slate-500 mt-1 block">Definir este cartão como principal para
+                            gastos?</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="w-6 h-6 accent-estgar-roxo cursor-pointer">
+                    </div>
+                </div>
+                <!-- Botões -->
+                <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
+                    <button type="button" class="w-full md:w-auto px-6 py-3 font-semibold text-slate-600 bg-transparent hover:bg-opacity-90 hover:shadow-lg border border-estgar-roxo hover:border-gray-400 rounded-xl transition-all ">Cancelar
+                    </button>
+                    <button type="submit" class="w-full md:w-auto px-8 py-3 bg-estgar-verde text-white font-bold rounded-xl shadow-md hover:bg-opacity-90 hover:shadow-lg transition-all">Salvar Cartão</button>
+
+                </div>
         </div>
+        </form>
     </main>
 </body>
 
 </html>
-
-<!-- testando um commit -->
