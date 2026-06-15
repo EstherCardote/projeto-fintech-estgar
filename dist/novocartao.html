@@ -14,14 +14,18 @@ n
         class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden">
 
         <div class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
+            <div class="relative w-full h-8 flex items-center">
 
-            <img src="./assets/images/LOGO SOZINHO-BRANCO-SEM FUNDO.png" alt="Icone Estgar"
-                class="h-8 object-contain block group-hover:hidden transition-opacity">
+                <img src="./assets/images/LOGO SOZINHO-BRANCO-SEM FUNDO.png" alt="Icone Estgar"
+                    class="absolute left-0 h-8 w-auto object-contain transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0">
 
-            <img src="./assets/images/LOGO-INTEIRO-BRANCO SEM FUNDO.png" alt="Icone Logo + Estgar"
-                class="h-8 w-auto object-contain hidden group-hover:block transition-opacity">
+                <img src="./assets/images/LOGO-INTEIRO-BRANCO SEM FUNDO.png" alt="Icone Logo + Estgar"
+                    class="absolute left-0 h-7.5 w-auto object-contain transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100">
+
+            </div>
         </div>
 
+        <!-- Itens do MENU -->
         <div class="w-full flex flex-col gap-2 px-4 mt-8">
 
             <!-- MENU - INICIO -->
@@ -105,25 +109,47 @@ n
                     class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Configurações</span>
             </a>
         </div>
+        <!-- Rodapé MENU -->
+        <div class="mt-auto flex flex-col px-4 pb-6">
+            <hr class="border-white/30 mx-4 mb-4">
 
+            <a href="#"
+                class="flex items-center gap-4 px-3 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+
+                <span class="text-2xl min-w-8 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-user-round">
+                        <path d="M17.925 20.056a6 6 0 0 0-11.851.001" />
+                        <circle cx="12" cy="10" r="4" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                </span>
+
+                <span
+                    class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">
+                    Esther
+                </span>
+            </a>
         </div>
+
     </nav>
     <main class="flex-1 ml-20 p-8">
         <div class="max-w-4xl mx-auto p-8">
-            <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-8">Cadastrar Novo Cartão</h1>
-            <form class="space-y-6">
+            <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-12">Cadastrar Novo Cartão</h1>
+            <form class="space-y-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Apelido do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Apelido do Cartão</label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Apelido do Cartão</label>
                         <input type="text" placeholder="Ex: Cartão de Crédito"
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                     <!-- Bandeira do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Bandeira</label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Bandeira</label>
                         <select
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option>Mastercard</option>
                             <option>Visa</option>
                             <option>Elo</option>
@@ -135,15 +161,15 @@ n
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Vencimento do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Vencimento do Cartão</label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Vencimento do Cartão</label>
                         <input type="text" placeholder="MM/AA"
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                     <!-- Limite de crédito -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Limite de Crédito</label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Limite de Crédito</label>
                         <input type="text" placeholder="R$ 0,00"
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                 </div>
 
@@ -151,17 +177,17 @@ n
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Melhor dia de Compra -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Melhor dia de Compra</label>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Melhor dia de Compra</label>
                         <input type="number" placeholder="00"
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
                     <!-- Dia de Vencimento da Fatura -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-1">Dia de Vencimento da
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Dia de Vencimento da
                             Fatura</label>
                         <input type="number" placeholder="00"
-                            class="w-full p-3 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                 </div>
                 <!-- Ativar como cartão principal -->
