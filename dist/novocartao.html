@@ -137,18 +137,18 @@ n
     <main class="flex-1 ml-20 p-8">
         <div class="max-w-4xl mx-auto p-8">
             <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-12">Cadastrar Novo Cartão</h1>
-            <form class="space-y-10">
+            <form id="formNovoCartao" name="formNovoCartao" class="space-y-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Apelido do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Apelido do Cartão</label>
-                        <input type="text" placeholder="Ex: Cartão de Crédito"
+                        <label for="apelidoCartao" class="block text-sm font-semibold text-slate-700 mb-2">Apelido do Cartão</label>
+                        <input type="text" id="apelidoCartao" name="apelidoCartao" placeholder="Ex: Cartão de Crédito" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                     <!-- Bandeira do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Bandeira</label>
-                        <select
+                        <label for="bandeira" class="block text-sm font-semibold text-slate-700 mb-2">Bandeira</label>
+                        <select id="bandeira" name="bandeira" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option>Mastercard</option>
                             <option>Visa</option>
@@ -161,14 +161,14 @@ n
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Vencimento do Cartão -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Vencimento do Cartão</label>
-                        <input type="text" placeholder="MM/AA"
+                        <label for="vencimentoCartao" class="block text-sm font-semibold text-slate-700 mb-2">Vencimento do Cartão</label>
+                        <input type="text" id="vencimentoCartao" name="vencimentoCartao" placeholder="MM/AA" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                     <!-- Limite de crédito -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Limite de Crédito</label>
-                        <input type="text" placeholder="R$ 0,00"
+                        <label for="limiteCredito" class="block text-sm font-semibold text-slate-700 mb-2">Limite de Crédito</label>
+                        <input type="text" id="limiteCredito" name="limiteCredito" placeholder="R$ 0,00" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                 </div>
@@ -177,16 +177,16 @@ n
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Melhor dia de Compra -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Melhor dia de Compra</label>
-                        <input type="number" placeholder="00"
+                        <label for="melhorDiaCompra" class="block text-sm font-semibold text-slate-700 mb-2">Melhor dia de Compra</label>
+                        <input type="number" id="melhorDiaCompra" name="melhorDiaCompra" placeholder="00" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
                     <!-- Dia de Vencimento da Fatura -->
                     <div>
-                        <label class="block text-sm font-semibold text-slate-700 mb-2">Dia de Vencimento da
+                        <label for="diaVencimentoFatura" class="block text-sm font-semibold text-slate-700 mb-2">Dia de Vencimento da
                             Fatura</label>
-                        <input type="number" placeholder="00"
+                        <input type="number" id="diaVencimentoFatura" name="diaVencimentoFatura" placeholder="00" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
                 </div>
@@ -194,20 +194,20 @@ n
                 <div
                     class="bg-estgar-bege-escuro p-3 rounded-xl border border-gray-400 flex items-center justify-between mt-4">
                     <div>
-                        <span class="block text-base font-bold text-slate-800">Ativar como Cartão Principal</span>
+                        <label for="cartaoPrincipal" class="block text-base font-bold text-slate-800">Ativar como Cartão Principal</label>
                         <span class="text-sm text-slate-500 mt-1 block">Definir este cartão como principal para
                             gastos?</span>
                     </div>
                     <div>
-                        <input type="checkbox" class="w-6 h-6 accent-estgar-roxo cursor-pointer">
+                        <input type="checkbox" id="cartaoPrincipal" name="cartaoPrincipal" class="w-6 h-6 accent-estgar-roxo cursor-pointer">
                     </div>
                 </div>
                 <!-- Botões -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
-                    <button type="button"
+                    <button type="button" id="btnCancelar" name="btnCancelar"
                         class="w-full md:w-auto px-6 py-3 font-semibold text-slate-600 hover:bg-opacity-90 hover:shadow-lg border border-estgar-roxo hover:border-gray-400 rounded-xl transition-all ">Cancelar
                     </button>
-                    <button type="submit"
+                    <button type="submit" id="btnSalvar" name="btnSalvar"
                         class="w-full md:w-auto px-8 py-3 bg-estgar-verde text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all">Salvar
                         Cartão</button>
 
