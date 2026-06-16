@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- A linha abaixo Diz ao celular para não diminuir o site para caber na tela, mas sim usar a largura real do aparelho e o zoom em 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Nova Conta</title>
+    <title>Criar Nova Conta - Estgar</title>
     <!-- Link para o CSS gerado pelo Tailwind -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -42,7 +42,7 @@
             <div class="w-full max-w-2xl mx-auto">
                 <h1 class="text-3xl font-bold text-estgar-roxo mb-8 text-center md:text-center">Criar Nova Conta</h1>
 
-                <form class="space-y-8">
+                <form id="form-cadastro" name="form-cadastro" method="post" action="" class="space-y-8">
                     <!-- SESSÃO: DADOS PESSOAIS -->
                     <div class="space-y-4">
                         <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Dados Pessoais</h2>
@@ -50,28 +50,32 @@
                         <!-- Grid para colocar Nome e Sobrenome lado a lado -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Primeiro Nome</label>
-                                <input type="text"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <label for="primeiroNome"
+                                    class="block text-sm font-semibold text-slate-700 mb-1">Primeiro Nome</label>
+                                <input type="text" id="primeiroNome" name="primeiroNome" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Sobrenome</label>
-                                <input type="text"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <label for="sobrenome"
+                                    class="block text-sm font-semibold text-slate-700 mb-1">Sobrenome</label>
+                                <input type="text" id="sobrenome" name="sobrenome" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
                             </div>
                         </div>
                         <!-- Grid para CPF e Data de Nascimento -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">CPF</label>
-                                <input type="text" placeholder="000.000.000-00"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <label for="cpf" class="block text-sm font-semibold text-slate-700 mb-1">CPF</label>
+                                <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00"
+                                    inputmode="numeric" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Data de
+                                <label for="dataNascimento" class="block text-sm font-semibold text-slate-700 mb-1">Data
+                                    de
                                     Nascimento</label>
-                                <input type="date"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-500 ">
+                                <input type="date" id="dataNascimento" name="dataNascimento" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-500 ">
                             </div>
                         </div>
 
@@ -79,17 +83,19 @@
                         <div>
                             <span class="block text-sm font-semibold text-slate-700 mb-2">Sexo</span>
                             <div class="flex flex-wrap justify-between gap-6">
-                                <label class="flex items-center gap-2 cursor-pointer">
-                                    <input type="radio" name="sexo" value="feminino" class="w-4 h-4 accent-estgar-roxo">
+                                <label for="sexoFeminino" class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" id="sexoFeminino" name="sexo" value="feminino" required
+                                        class="w-4 h-4 accent-estgar-roxo">
                                     <span class="text-sm text-slate-700">Feminino</span>
                                 </label>
-                                <label class="flex items-center gap-2 cursor-pointer">
-                                    <input type="radio" name="sexo" value="masculino"
+                                <label for="sexoMasculino" class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" id="sexoMasculino" name="sexo" value="masculino" required
                                         class="w-4 h-4 accent-estgar-roxo">
                                     <span class="text-sm text-slate-700">Masculino</span>
                                 </label>
-                                <label class="flex items-center gap-2 cursor-pointer">
-                                    <input type="radio" name="sexo" value="outro" class="w-4 h-4 accent-estgar-roxo">
+                                <label for="sexoOutro" class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" id="sexoOutro" name="sexo" value="outro" required
+                                        class="w-4 h-4 accent-estgar-roxo">
                                     <span class="text-sm text-slate-700">Outros</span>
                                 </label>
                             </div>
@@ -100,14 +106,17 @@
                         <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Acesso</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
-                                <input type="email"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
+                                <label for="email"
+                                    class="block text-sm font-semibold text-slate-700 mb-1">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="exemplo@exemplo.com"
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Confirmar E-mail</label>
-                                <input type="email"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
+                                <label for="emailConfirmar"
+                                    class="block text-sm font-semibold text-slate-700 mb-1">Confirmar E-mail</label>
+                                <input type="email" id="emailConfirmar" name="emailConfirmar" required
+                                    placeholder="exemplo@exemplo.com"
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all" />
                             </div>
                         </div>
                     </div>
@@ -116,14 +125,18 @@
                         <h2 class="text-lg font-bold text-slate-800 border-b border-gray-400 pb-2">Segurança</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Senha</label>
-                                <input type="password"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <label for="senha" class="block text-sm font-semibold text-slate-700 mb-1">Senha</label>
+                                <input type="password" id="senha" name="senha" minlength="8" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <span id="erro-senha" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-1">Confirmar Senha</label>
-                                <input type="password"
-                                    class="w-full p-3 bg-estgar-bege/30 border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <label for="senhaConfirmar"
+                                    class="block text-sm font-semibold text-slate-700 mb-1">Confirmar Senha</label>
+                                <input type="password" id="senhaConfirmar" name="senhaConfirmar" minlength="8" required
+                                    class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all">
+                                <span id="erro-senha-confirmar"
+                                    class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                             </div>
                         </div>
                         <p class="text-xs text-gray-500 mt-1">Pelo menos 8 caracteres, uma letra maiúscula e um número.
@@ -131,14 +144,15 @@
                     </div>
                     <!-- TERMOS E BOTÃO -->
                     <div class="pt-4">
-                        <label class="flex items-center gap-3 cursor-pointer mb-6">
-                            <input type="checkbox" class="w-5 h-5 accent-estgar-roxo rounded">
+                        <label for="termos" class="flex items-center gap-3 cursor-pointer mb-6">
+                            <input type="checkbox" id="termos" name="termos" required
+                                class="w-5 h-5 accent-estgar-roxo rounded">
                             <span class="text-sm text-slate-700">Aceito os <a href="#"
                                     class="font-bold underline hover:text-estgar-roxo">Termos de Uso</a> e <a href="#"
                                     class="font-bold underline hover:text-estgar-roxo">Política de
                                     Privacidade</a></span>
                         </label>
-                        <button type="submit"
+                        <button type="submit" id="criarConta" name="criarConta"
                             class="w-full bg-estgar-verde text-white font-bold text-lg p-4 rounded-xl hover:opacity-90 active:scale-[0.98] transition-all shadow-sm">Criar
                             Conta</button>
                     </div>
@@ -148,8 +162,6 @@
                         class="text-estgar-roxo font-bold hover:underline">Fazer Login</a></p>
             </div>
         </section>
-
-
     </main>
 </body>
 
