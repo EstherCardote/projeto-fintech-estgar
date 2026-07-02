@@ -139,8 +139,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Informações Gerais -->
                     <div>
-                        <label for="nomePlanejamento"
-                            class="block text-sm font-semibold text-slate-700 mb-2">Planejamento</label>
+                        <label for="nomePlanejamento" class="block text-sm font-semibold text-slate-700 mb-2">Nome do
+                            Planejamento</label>
                         <input type="text" id="nomePlanejamento" name="nomePlanejamento"
                             placeholder="Ex: Orçamento Trimestral" required
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
@@ -152,11 +152,77 @@
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
+                    <div>
+                        <label for="dataInicio" class="block text-sm font-semibold text-slate-700 mb-2">Data
+                            Inicio</label>
+                        <input type="date" id="dataInicio" name="dataInicio" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="dataFim" class="block text-sm font-semibold text-slate-700 mb-2">Data
+                            Fim</label>
+                        <input type="date" id="dataFim" name="dataFim"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                </div>
+
+                <!-- Limites por Categoria -->
+                <div id="containerLimiteCategoria" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label for="limiteCategoria1" class="block text-sm font-semibold text-slate-700 mb-2">Limites
+                            por Categoria</label>
+                        <select name="limiteCategoria1" id="limiteCategoria1"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="alimentação">Alimentação</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="lazer">Lazer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="valor1"
+                            class="block text-sm font-semibold text-slate-700 mb-2 opacity-0">Valor</label>
+                        <input type="text" id="valor1" name="valorCategoria1" placeholder="R$ 0,00"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <div>
+                        <select name="limiteCategoria2" id="limiteCategoria2"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="alimentação">Alimentação</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="lazer">Lazer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" id="valor2" name="valorCategoria2" placeholder="R$ 0,00"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <div>
+                        <select name="limiteCategoria3" id="limiteCategoria3"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="alimentação">Alimentação</option>
+                            <option value="transporte">Transporte</option>
+                            <option value="lazer">Lazer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" id="valor3" name="valorCategoria3" placeholder="R$ 0,00"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
                 </div>
 
             </form>
 
         </div>
+
+
 
     </main>
 
