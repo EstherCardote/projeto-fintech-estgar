@@ -416,6 +416,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-baseline {
+    justify-content: baseline;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -439,6 +442,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-64 {
+    gap: calc(var(--spacing) * 64);
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -506,6 +512,9 @@
   }
   .border-estgar-roxo {
     border-color: var(--color-estgar-roxo);
+  }
+  .border-estgar-verde {
+    border-color: var(--color-estgar-verde);
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
@@ -576,14 +585,17 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -655,6 +667,9 @@
   }
   .text-estgar-roxo {
     color: var(--color-estgar-roxo);
+  }
+  .text-estgar-verde {
+    color: var(--color-estgar-verde);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -788,13 +803,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
-      }
-    }
-  }
-  .hover\:bg-white {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-white);
       }
     }
   }
