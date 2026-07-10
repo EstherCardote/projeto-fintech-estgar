@@ -135,7 +135,7 @@
         </div>
     </nav>
 
-    <main class="flex-1 ml-20 p-8">
+    <main class="flex-1 ml-20 p-6">
         <div class="max-w-4xl mx-auto p-8">
             <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-8">Novo Registro de Movimentação</h1>
 
@@ -179,7 +179,7 @@
                         <label for="descricaoMovimentacao"
                             class="block text-sm font-semibold text-slate-700 mb-2">Descrição</label>
                         <input type="text" id="descricaoMovimentacao" name="descricaoMovimentacao"
-                            placeholder="Ex: Salário"
+                            placeholder="Ex: Pagamento referente ao projeto XPTO"
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
@@ -190,15 +190,46 @@
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option value="0" disabled selected>Escolha uma opção</option>
                             <option value="alimentação">Alimentação</option>
+                            <option value="aluguel">Aluguel</option>
+                            <option value="assassinaturas">Assinaturas</option>
+                            <option value="compras">Compras</option>
+                            <option value="dividendos">Dividendos</option>
                             <option value="educação">Educação</option>
+                            <option value="Emprestimos">Emprestimos</option>
+                            <option value="financiamento">Financiamento</option>
                             <option value="freelance">Freelance</option>
+                            <option value="impostos">Impostos</option>
+                            <option value="investimentos">Investimentos</option>
+                            <option value="juros">Juros</option>
+                            <option value="lazer">Lazer</option>
+                            <option value="moradia">Moradia</option>
+                            <option value="extra">Reembolso</option>
+                            <option value="extra">Renda Extra</option>
                             <option value="salário">Salário</option>
+                            <option value="saude">Saúde</option>
                             <option value="transporte">Transporte</option>
+                            <option value="transporte">Venda</option>
+                        </select>
+                    </div>
+
+                    <!-- Forma de Pagamento -->
+                    <div id="camposDespesa">
+                        <label for="formaPagamento" class="block text-sm font-semibold text-slate-700 mb-2">Forma de
+                            Pagamento</label>
+                        <select id="formaPagamento" name="formaPagamento" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="credito">Crédito</option>
+                            <option value="debito">Débito</option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="PIX">PIX</option>
+                            <option value="transferencia">Transferência</option>
                         </select>
                     </div>
 
                     <!-- Cartão Associado -->
-                    <div>
+                    <div id="camposDespesa">
                         <label for="cartaoAssociado" class="block text-sm font-semibold text-slate-700 mb-2">Cartão
                             Associado</label>
                         <select id="cartaoAssociado" name="cartaoAssociado"
@@ -208,6 +239,22 @@
                             <option value="">Apelido do cartão cadastrado</option>
                             <option value="">Apelido do cartão cadastrado</option>
                         </select>
+                    </div>
+
+                    <!-- Quantidade de Parcelas -->
+                    <div id="camposDespesa">
+                        <label for="quantidadeParcelas"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Quantidade de
+                            Parcelas</label>
+                        <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" placeholder="00" min="0"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <!-- Data da Movimentação -->
+                    <div id="camposDespesa">
+                        <label for="dataMovimentacao" class="block text-sm font-semibold text-slate-700 mb-2">Data do Vencimento</label>
+                        <input type="date" id="dataMovimentacao" name="dataMovimentacao" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
                     <!-- Centro de Custo -->
@@ -230,8 +277,8 @@
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option value="0" disabled selected>Escolha uma opção</option>
                             <option value="">Nome do Projeto Cadastrado</option>
-                            <option value="">Nome do Projeto Cadastrado cadastrado</option>
-                            <option value="">Nome do Projeto Cadastrado cadastrado</option>
+                            <option value="">Nome do Projeto Cadastrado</option>
+                            <option value="">Nome do Projeto Cadastrado</option>
                         </select>
                     </div>
 
@@ -244,19 +291,35 @@
                     </div>
 
 
-                    <!-- Repetir Mensalmente -->
-                    <div class="flex items-center gap-2">
-                        <label for="repetirMensalmente" class="text-sm font-bold text-slate-700 mb-2">Repetir
-                            Mensalmente</label>
-                        <input type="checkbox" id="repetirMensalmente" name="repetirMensalmente" class="w-6 h-4">
+                </div>
+
+                <!-- COLUNA DA ESQUERDA: Repetir Mensalmente -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-2">
+                    <div class="flex items-center gap-3">
+                        <label for="repetirMensalmente" class="text-sm font-semibold text-slate-700 cursor-pointer">
+                            Movimentação recorrente
+                        </label>
+                        <input type="checkbox" id="repetirMensalmente" name="repetirMensalmente"
+                            class="w-5 h-5 rounded border-gray-400 text-estgar-roxo focus:ring-estgar-roxo accent-estgar-roxo cursor-pointer transition-all">
+                    </div>
+
+                    <!-- COLUNA DA DIREITA: Anexar Comprovante -->
+                    <div class="flex flex-col md:justify-end">
+                        <!-- Input verdadeiro, escondido com a classe 'hidden'  -->
+                        <input type="file" id="anexoComprovante" name="anexoComprovante" class="hidden"
+                            accept="image/*, .pdf">
+
+                        <!-- O Label que funciona como Botão (Conectado ao input pelo 'for' -->
+                        <label for="anexoComprovante"
+                            class="cursor-pointer flex items-center justify-center gap-3 px-6 py-3 border-2 bg-estgar-bege-escuro border-estgar-roxo text-estgar-roxo font-bold rounded-xl hover:bg-estgar-roxo hover:text-white transition-all w-full md:w-auto"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48" />
+                            </svg> Anexar Comprovante</label>
                     </div>
                 </div>
-
-                <!-- Anexar Comprovante -->
-                <div>
-                    
-                </div>
-
                 <!-- Botões -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
                     <button type="button" id="btnCancelar" name="btnCancelar"
