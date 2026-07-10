@@ -139,16 +139,41 @@
         <div class="max-w-4xl mx-auto p-8">
             <h1 class="text-3xl font-bold text-center text-estgar-roxo mb-8">Novo Registro de Movimentação</h1>
 
-            <div class="bg-estgar-bege-escuro p-8 rounded-xl flex justify-center gap-6 mx-auto">
-                <!-- BOTÃO RECEITA (VERDE) -->
-                <button type="button" id="btnReceita" name="btnReceita"
-                    class="px-8 py-3 rounded-xl bg-estgar-verde font-bold hover:shadow-lg transition-all">Receita</button>
+            <div class="flex justify-center w-full mb-4">
+                <div class="bg-estgar-bege-escuro py-3 px-4 rounded-xl flex gap-6">
+                    <!-- BOTÃO RECEITA (VERDE) -->
+                    <button type="button" id="btnReceita" name="btnReceita"
+                        class="px-8 py-3 rounded-xl bg-estgar-verde font-bold hover:shadow-lg transition-all">Receita</button>
 
-                <!-- BOTÃO DESPESA (ROXO) -->
-                <button type="button" id="btnDespesa" name="btnDespesa"
-                    class="px-8 py-3 rounded-xl bg-estgar-roxo font-bold hover:shadow-lg transition-all">Despesa</button>
+                    <!-- BOTÃO DESPESA (ROXO) -->
+                    <button type="button" id="btnDespesa" name="btnDespesa"
+                        class="px-8 py-3 rounded-xl bg-estgar-roxo font-bold hover:shadow-lg transition-all">Despesa</button>
 
+                </div>
             </div>
+
+            <!-- CONTAINER DOS FORMULARIOS -->
+            <form id="formRegistroMovimentacao" name="formRegistroMovimentacao" method="post" action=""
+                class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Data da Movimentação -->
+                    <div>
+                        <label for="dataMovimentacao" class="block text-sm font-semibold text-slate-700 mb-2">Data da
+                            Movimentação</label>
+                        <input type="date" id="dataMovimentacao" name="dataMovimentacao" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <!-- Descrição da Movimentação -->
+                    <div>
+                        <label for="descricaoMovimentacao"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Descrição</label>
+                        <input type="text" id="descricaoMovimentacao" name="descricaoMovimentacao" placeholder="Ex: Salário"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                </div>
+            </form>
         </div>
 
     </main>
