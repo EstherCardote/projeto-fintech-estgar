@@ -165,6 +165,15 @@
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
+                    <!-- Valor -->
+                    <div>
+                        <label for="valorMovimentacao"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Valor</label>
+                        <input type="number" id="valorMovimentacao" name="valorMovimentacao" placeholder="R$ 0,00"
+                            step="0.01" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
                     <!-- Descrição da Movimentação -->
                     <div>
                         <label for="descricaoMovimentacao"
@@ -195,17 +204,71 @@
                         <select id="cartaoAssociado" name="cartaoAssociado"
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option value="0" disabled selected>Escolha uma opção</option>
-                            <option value="">Nome do Apelido do cartão cadastrado</option>
-                            <option value="">Nome do Apelido do cartão cadastrado</option>
-                            <option value="">Nome do Apelido do cartão cadastrado</option>
+                            <option value="">Apelido do cartão cadastrado</option>
+                            <option value="">Apelido do cartão cadastrado</option>
+                            <option value="">Apelido do cartão cadastrado</option>
                         </select>
                     </div>
+
+                    <!-- Centro de Custo -->
+                    <div>
+                        <label for="centroCusto" class="block text-sm font-semibold text-slate-700 mb-2">Centro de
+                            Custo</label>
+                        <select id="centroCusto" name="centroCusto"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="">Centro de Custo cadastrado</option>
+                            <option value="">Centro de Custo cadastrado</option>
+                            <option value="">Centro de Custo cadastrado</option>
+                        </select>
+                    </div>
+
+                    <!-- Projeto -->
+                    <div>
+                        <label for="projeto" class="block text-sm font-semibold text-slate-700 mb-2">Projeto</label>
+                        <select id="projeto" name="projeto"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="">Nome do Projeto Cadastrado</option>
+                            <option value="">Nome do Projeto Cadastrado cadastrado</option>
+                            <option value="">Nome do Projeto Cadastrado cadastrado</option>
+                        </select>
+                    </div>
+
+                    <!-- Observações -->
+                    <div>
+                        <label for="observacoes"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Observações</label>
+                        <input type="text" id="observacoes" name="observacoes" placeholder="Ex: Salário"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+
+                    <!-- Repetir Mensalmente -->
+                    <div class="flex items-center gap-2">
+                        <label for="repetirMensalmente" class="text-sm font-bold text-slate-700 mb-2">Repetir
+                            Mensalmente</label>
+                        <input type="checkbox" id="repetirMensalmente" name="repetirMensalmente" class="w-6 h-4">
+                    </div>
+                </div>
+
+                <!-- Anexar Comprovante -->
+                <div>
+                    
+                </div>
+
+                <!-- Botões -->
+                <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
+                    <button type="button" id="btnCancelar" name="btnCancelar"
+                        class="w-full md:w-auto px-6 py-3 font-semibold text-slate-600 hover:shadow-lg border border-estgar-roxo hover:border-gray-400 rounded-xl transition-all ">Cancelar
+                    </button>
+                    <button type="submit" id="btnSalvar" name="btnSalvar"
+                        class="w-full md:w-auto px-10 py-3 bg-estgar-verde text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all">Salvar
+                    </button>
                 </div>
             </form>
         </div>
-
     </main>
-
 </body>
 
 </html>
