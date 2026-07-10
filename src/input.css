@@ -2,15 +2,34 @@
 
 @theme {
     /* Criando as cores personalizadas do projeto Estgar */
+
+    /* Fundo Principal */
+    --color-estgar-background: #FCFAF8;
+
     --color-estgar-amarelo: #F4C95D;
     --color-estgar-azul: #5B8DEF;
+
     --color-estgar-bege: #f1e3d3;
     --color-estgar-bege-escuro: #f2d0a9;
+
     --color-estgar-branco: #FFFFFF;
+
+    --color-estgar-cinza-50: #F8F9FA;
+    --color-estgar-cinza-100: #F1F3F5;
+    --color-estgar-cinza-200: #E9ECEF;
+    --color-estgar-cinza-300: #DEE2E6;
+    --color-estgar-cinza-500: #6C757D;
+    --color-estgar-cinza-700: #495057;
+    --color-estgar-cinza-900: #212529;
+    
     --color-estgar-laranja: #F39C6B;
+
     --color-estgar-roxo: #8e7dbe;
     --color-estgar-roxo-escuro: #6F5DA8;
+
     --color-estgar-verde: #99c1b9;
     --color-estgar-verde-escuro: #4F9D8A;
+
     --color-estgar-vermelho: #D65A5A;
+    --color-estgar-vermelho-escuro: #B54848;
 }

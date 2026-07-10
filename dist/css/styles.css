@@ -45,6 +45,7 @@
     --font-weight-black: 900;
     --leading-tight: 1.25;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -53,6 +54,9 @@
     --default-mono-font-family: var(--font-mono);
     --color-estgar-bege: #f1e3d3;
     --color-estgar-bege-escuro: #f2d0a9;
+    --color-estgar-cinza-200: #E9ECEF;
+    --color-estgar-cinza-300: #DEE2E6;
+    --color-estgar-cinza-500: #6C757D;
     --color-estgar-roxo: #8e7dbe;
     --color-estgar-roxo-escuro: #6F5DA8;
     --color-estgar-verde: #99c1b9;
@@ -483,6 +487,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -531,6 +538,15 @@
   .bg-estgar-bege-escuro {
     background-color: var(--color-estgar-bege-escuro);
   }
+  .bg-estgar-cinza-200 {
+    background-color: var(--color-estgar-cinza-200);
+  }
+  .bg-estgar-cinza-300 {
+    background-color: var(--color-estgar-cinza-300);
+  }
+  .bg-estgar-cinza-500 {
+    background-color: var(--color-estgar-cinza-500);
+  }
   .bg-estgar-roxo {
     background-color: var(--color-estgar-roxo);
   }
@@ -563,6 +579,9 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);

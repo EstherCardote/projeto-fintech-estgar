@@ -140,7 +140,7 @@
             <h1 class="text-3xl font-bold text-center text-estgar-roxo-escuro mb-8">Novo Registro de Movimentação</h1>
 
             <div class="flex justify-center w-full mb-4">
-                <div class="bg-estgar-bege-escuro py-3 px-4 rounded-xl flex gap-6">
+                <div class="bg-estgar-bege-escuro p-5 rounded-2xl flex gap-3 shadow-sm">
                     <!-- BOTÃO RECEITA (VERDE) -->
                     <button type="button" id="btnReceita" name="btnReceita"
                         class="px-8 py-3 rounded-xl bg-estgar-verde text-white font-bold hover:shadow-lg transition-all">Receita</button>
@@ -155,6 +155,8 @@
             <!-- CONTAINER DOS FORMULARIOS -->
             <form id="formRegistroMovimentacao" name="formRegistroMovimentacao" method="post" action=""
                 class="space-y-5">
+
+                <!-- FORMULARIOS EM COMUM ENTRE DESPESA E RECEITA -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <!-- Data da Movimentação -->
@@ -195,7 +197,7 @@
                             <option value="compras">Compras</option>
                             <option value="dividendos">Dividendos</option>
                             <option value="educação">Educação</option>
-                            <option value="Emprestimos">Emprestimos</option>
+                            <option value="emprestimos">Emprestimos</option>
                             <option value="financiamento">Financiamento</option>
                             <option value="freelance">Freelance</option>
                             <option value="impostos">Impostos</option>
@@ -203,58 +205,13 @@
                             <option value="juros">Juros</option>
                             <option value="lazer">Lazer</option>
                             <option value="moradia">Moradia</option>
-                            <option value="extra">Reembolso</option>
-                            <option value="extra">Renda Extra</option>
+                            <option value="reembolso">Reembolso</option>
+                            <option value="rendaExtra">Renda Extra</option>
                             <option value="salário">Salário</option>
                             <option value="saude">Saúde</option>
                             <option value="transporte">Transporte</option>
-                            <option value="transporte">Venda</option>
+                            <option value="venda">Venda</option>
                         </select>
-                    </div>
-
-                    <!-- Forma de Pagamento -->
-                    <div id="camposDespesa">
-                        <label for="formaPagamento" class="block text-sm font-semibold text-slate-700 mb-2">Forma de
-                            Pagamento</label>
-                        <select id="formaPagamento" name="formaPagamento" required
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
-                            <option value="0" disabled selected>Escolha uma opção</option>
-                            <option value="boleto">Boleto</option>
-                            <option value="credito">Crédito</option>
-                            <option value="debito">Débito</option>
-                            <option value="dinheiro">Dinheiro</option>
-                            <option value="PIX">PIX</option>
-                            <option value="transferencia">Transferência</option>
-                        </select>
-                    </div>
-
-                    <!-- Cartão Associado -->
-                    <div id="camposDespesa">
-                        <label for="cartaoAssociado" class="block text-sm font-semibold text-slate-700 mb-2">Cartão
-                            Associado</label>
-                        <select id="cartaoAssociado" name="cartaoAssociado"
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
-                            <option value="0" disabled selected>Escolha uma opção</option>
-                            <option value="">Apelido do cartão cadastrado</option>
-                            <option value="">Apelido do cartão cadastrado</option>
-                            <option value="">Apelido do cartão cadastrado</option>
-                        </select>
-                    </div>
-
-                    <!-- Quantidade de Parcelas -->
-                    <div id="camposDespesa">
-                        <label for="quantidadeParcelas"
-                            class="block text-sm font-semibold text-slate-700 mb-2">Quantidade de
-                            Parcelas</label>
-                        <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" placeholder="00" min="0"
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
-                    </div>
-
-                    <!-- Data da Movimentação -->
-                    <div id="camposDespesa">
-                        <label for="dataMovimentacao" class="block text-sm font-semibold text-slate-700 mb-2">Data do Vencimento</label>
-                        <input type="date" id="dataMovimentacao" name="dataMovimentacao" required
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
                     <!-- Centro de Custo -->
@@ -262,7 +219,7 @@
                         <label for="centroCusto" class="block text-sm font-semibold text-slate-700 mb-2">Centro de
                             Custo</label>
                         <select id="centroCusto" name="centroCusto"
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option value="0" disabled selected>Escolha uma opção</option>
                             <option value="">Centro de Custo cadastrado</option>
                             <option value="">Centro de Custo cadastrado</option>
@@ -274,7 +231,7 @@
                     <div>
                         <label for="projeto" class="block text-sm font-semibold text-slate-700 mb-2">Projeto</label>
                         <select id="projeto" name="projeto"
-                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:bg-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                             <option value="0" disabled selected>Escolha uma opção</option>
                             <option value="">Nome do Projeto Cadastrado</option>
                             <option value="">Nome do Projeto Cadastrado</option>
@@ -289,9 +246,75 @@
                         <input type="text" id="observacoes" name="observacoes" placeholder="Ex: Salário"
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
-
-
                 </div>
+                <!-- Formulario exclusivo para Receita -->
+                <div id="camposReceita" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Conta de Recebimento -->
+                    <div>
+                        <label for="contaRecebimento" class="block text-sm font-semibold text-slate-700 mb-2">Conta
+                            de
+                            Recebimento</label>
+                        <select id="contaRecebimento" name="contaRecebimento"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="">Apelido da conta cadastrada</option>
+                            <option value="">Apelido da conta cadastrada</option>
+                            <option value="">Apelido da conta cadastrada</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Formulario exclusivo para Despesa -->
+                <div id="camposDespesa" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Forma de Pagamento -->
+                    <div>
+                        <label for="formaPagamento" class="block text-sm font-semibold text-slate-700 mb-2">Forma de
+                            Pagamento</label>
+                        <select id="formaPagamento" name="formaPagamento" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="credito">Crédito</option>
+                            <option value="debito">Débito</option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="pix">PIX</option>
+                            <option value="transferencia">Transferência</option>
+                        </select>
+                    </div>
+
+                    <!-- Cartão Associado -->
+                    <div>
+                        <label for="cartaoAssociado" class="block text-sm font-semibold text-slate-700 mb-2">Cartão
+                            Associado</label>
+                        <select id="cartaoAssociado" name="cartaoAssociado"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="0" disabled selected>Escolha uma opção</option>
+                            <option value="">Apelido do cartão cadastrado</option>
+                            <option value="">Apelido do cartão cadastrado</option>
+                            <option value="">Apelido do cartão cadastrado</option>
+                        </select>
+                    </div>
+
+                    <!-- Quantidade de Parcelas -->
+                    <div>
+                        <label for="quantidadeParcelas"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Quantidade de
+                            Parcelas</label>
+                        <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" placeholder="00" min="0"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                    <!-- Data do Vencimento -->
+                    <div>
+                        <label for="dataVencimento" class="block text-sm font-semibold text-slate-700 mb-2">Data do
+                            Vencimento</label>
+                        <input type="date" id="dataVencimento" name="dataVencimento" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                </div>
+
 
                 <!-- COLUNA DA ESQUERDA: Repetir Mensalmente -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-2">
@@ -320,6 +343,7 @@
                             </svg> Anexar Comprovante</label>
                     </div>
                 </div>
+
                 <!-- Botões -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
                     <button type="button" id="btnCancelar" name="btnCancelar"
@@ -332,6 +356,7 @@
             </form>
         </div>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
