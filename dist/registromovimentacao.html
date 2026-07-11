@@ -246,12 +246,9 @@
                         <input type="text" id="observacoes" name="observacoes" placeholder="Ex: Salário"
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
-                </div>
-                <!-- Formulario exclusivo para Receita -->
-                <div id="camposReceita" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <!-- Conta de Recebimento -->
-                    <div>
+                    <div class="campo-receita">
                         <label for="contaRecebimento" class="block text-sm font-semibold text-slate-700 mb-2">Conta
                             de
                             Recebimento</label>
@@ -263,13 +260,9 @@
                             <option value="">Apelido da conta cadastrada</option>
                         </select>
                     </div>
-                </div>
-
-                <!-- Formulario exclusivo para Despesa -->
-                <div id="camposDespesa" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <!-- Forma de Pagamento -->
-                    <div>
+                    <div class="campo-despesa">
                         <label for="formaPagamento" class="block text-sm font-semibold text-slate-700 mb-2">Forma de
                             Pagamento</label>
                         <select id="formaPagamento" name="formaPagamento" required
@@ -285,7 +278,7 @@
                     </div>
 
                     <!-- Cartão Associado -->
-                    <div>
+                    <div class="campo-despesa">
                         <label for="cartaoAssociado" class="block text-sm font-semibold text-slate-700 mb-2">Cartão
                             Associado</label>
                         <select id="cartaoAssociado" name="cartaoAssociado"
@@ -298,16 +291,17 @@
                     </div>
 
                     <!-- Quantidade de Parcelas -->
-                    <div>
+                    <div class="campo-despesa">
                         <label for="quantidadeParcelas"
-                            class="block text-sm font-semibold text-slate-700 mb-2">Quantidade de
+                            class="block text-sm font-semibold text-slate-700 mb-2">Quantidade
+                            de
                             Parcelas</label>
                         <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" placeholder="00" min="0"
                             class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
                     </div>
 
                     <!-- Data do Vencimento -->
-                    <div>
+                    <div class="campo-despesa">
                         <label for="dataVencimento" class="block text-sm font-semibold text-slate-700 mb-2">Data do
                             Vencimento</label>
                         <input type="date" id="dataVencimento" name="dataVencimento" required
