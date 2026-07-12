@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado de Investimento</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+    <nav
+        class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden">
+
+        <a href="#" class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
+            <div class="relative w-full h-8 flex items-center">
+                <img src="./assets/images/LOGO SOZINHO-BRANCO-SEM FUNDO.png" alt="Icone Estgar"
+                    class="absolute left-0 h-8 w-auto object-contain transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0">
+
+                <img src="./assets/images/LOGO-INTEIRO-BRANCO SEM FUNDO.png" alt="Icone Logo + Estgar"
+                    class="absolute left-0 h-8 w-auto object-contain transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100">
+            </div>
+
+        </a>
+
+        <!-- MENU PRINCIPAL -->
+
+        <ul class="w-full flex flex-col gap-2 px-4 mt-8">
+            <!-- INICIO -->
+            <li>
+                <a href="#"
+                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house-icon lucide-house">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg></span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Inicio</span>
+                </a>
+            </li>
+
+            <!-- CARTÕES -->
+            <li>
+                <a href="#"
+                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-credit-card-icon lucide-credit-card">
+                            <rect width="20" height="14" x="2" y="5" rx="2" />
+                            <line x1="2" x2="22" y1="10" y2="10" />
+                        </svg></span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Cartões</span>
+                </a>
+            </li>
+
+            <!-- EXTRATO -->
+            <li>
+                <a href="#"
+                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-receipt-text-icon lucide-receipt-text">
+                            <path d="M13 16H8" />
+                            <path d="M14 8H8" />
+                            <path d="M16 12H8" />
+                            <path
+                                d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+                        </svg></span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Extrato</span>
+                </a>
+            </li>
+
+            <!-- PLANEJAMENTO -->
+            <li>
+                <a href="#"
+                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calendar-days-icon lucide-calendar-days">
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <rect width="18" height="18" x="3" y="4" rx="2" />
+                            <path d="M3 10h18" />
+                            <path d="M8 14h.01" />
+                            <path d="M12 14h.01" />
+                            <path d="M16 14h.01" />
+                            <path d="M8 18h.01" />
+                            <path d="M12 18h.01" />
+                            <path d="M16 18h.01" />
+                        </svg></span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Planejamento</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- MENU RODAPÉ -->
+        <div class="mt-auto flex flex-col px-4 pb-6">
+
+            <hr class="border-white/30 mx-4 mb-4">
+
+            <ul>
+                <!-- CONFIGURAÇÕES -->
+                <li>
+                    <a href="#"
+                        class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+
+                        <span class="text-2xl min-w-8 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings">
+                                <path
+                                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </span>
+
+                        <span
+                            class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+
+                <!-- PERFIL -->
+                <li>
+                    <a href="#"
+                        class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+
+                        <span class="text-2xl min-w-8 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-user-round">
+                                <path d="M17.925 20.056a6 6 0 0 0-11.851.001" />
+                                <circle cx="12" cy="10" r="4" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </span>
+
+                        <span
+                            class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">
+                            Esther
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+</body>
+
+</html>
