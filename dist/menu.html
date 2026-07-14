@@ -10,7 +10,7 @@
 
 <body>
     <nav
-        class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden">
+        class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden overflow-y-auto">
 
         <a href="./dashboard.html" class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
             <div class="relative w-full h-8 flex items-center">
@@ -25,7 +25,7 @@
 
         <!-- MENU PRINCIPAL -->
 
-        <ul class="w-full flex flex-col gap-2 px-4 mt-8">
+        <ul class="w-full flex flex-col gap-2 px-4 mt-8 text-sm">
             <!-- INICIO -->
             <li>
                 <a href="./dashboard.html"
@@ -44,7 +44,7 @@
             </li>
 
             <!-- CARTÕES -->
-            <li>
+            <li class="group/cartoes relative">
                 <a href="#"
                     class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -57,10 +57,23 @@
                     <span
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Cartões</span>
                 </a>
+                <!-- SUBMENU -->
+                <ul class="hidden group-hover/cartoes:block ml-12 mt-2 space-y-1 text-xs">
+                    <li>
+                        <a href="#"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
+                            de Cartões</a>
+                    </li>
+                    <li>
+                        <a href="./novocartao.html"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
+                            Cartão</a>
+                    </li>
+                </ul>
             </li>
 
             <!-- EXTRATO -->
-            <li>
+            <li class="group/extrato relative">
                 <a href="#"
                     class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +89,23 @@
                     <span
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Extrato</span>
                 </a>
+                <!-- SUBMENU -->
+                <ul class="hidden group-hover/extrato:block ml-12 mt-2 space-y-1 text-xs">
+                    <li>
+                        <a href="#"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
+                            de Movimentações</a>
+                    </li>
+                    <li>
+                        <a href="./registromovimentacao.html"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
+                            Movimentação</a>
+                    </li>
+                </ul>
             </li>
 
             <!-- PLANEJAMENTO -->
-            <li>
+            <li class="group/planejamento relative">
                 <a href="#"
                     class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -100,10 +126,23 @@
                     <span
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Planejamento</span>
                 </a>
+                <!-- SUBMENU -->
+                <ul class="hidden group-hover/planejamento:block ml-12 mt-2 space-y-1 text-xs">
+                    <li>
+                        <a href="#"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
+                            de Planejamento</a>
+                    </li>
+                    <li>
+                        <a href="./planejamento.html"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
+                            Planejamento</a>
+                    </li>
+                </ul>
             </li>
 
             <!-- PROJETO -->
-            <li>
+            <li class="group/projeto relative">
                 <a href="#"
                     class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +157,22 @@
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Projeto
                         Financeiro</span>
                 </a>
+                <!-- SUBMENU -->
+                <ul class="hidden group-hover/projeto:block ml-12 mt-2 space-y-1 text-xs">
+                    <li>
+                        <a href="#"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
+                            de Projetos</a>
+                    </li>
+                    <li>
+                        <a href="./projetofinanceiro.html"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
+                            Projeto</a>
+                    </li>
+                </ul>
             </li>
             <!-- SIMULADOR DE INVESTIMENTO -->
-            <li>
+            <li class="group/simulador relative">
                 <a href="#"
                     class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
@@ -138,6 +190,19 @@
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Simulador
                         de Investimento</span>
                 </a>
+                <!-- SUBMENU -->
+                <ul class="hidden group-hover/simulador:block ml-12 mt-2 space-y-1 text-xs">
+                    <li>
+                        <a href="#"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
+                            de Simulações</a>
+                    </li>
+                    <li>
+                        <a href="./simuladoinvestimento.html"
+                            class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
+                            Simulação</a>
+                    </li>
+                </ul>
             </li>
         </ul>
 
@@ -146,7 +211,7 @@
 
             <hr class="border-white/30 mx-4 mb-4">
 
-            <ul>
+            <ul class="text-sm">
                 <!-- CONFIGURAÇÕES -->
                 <li>
                     <a href="#"

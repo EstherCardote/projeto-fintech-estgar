@@ -17,7 +17,6 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-mauve-50: oklch(98.5% 0 0);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -298,6 +297,12 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
+  .ml-8 {
+    margin-left: calc(var(--spacing) * 8);
+  }
+  .ml-12 {
+    margin-left: calc(var(--spacing) * 12);
+  }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
   }
@@ -363,6 +368,9 @@
   }
   .h-px {
     height: 1px;
+  }
+  .max-h-0 {
+    max-height: 0;
   }
   .min-h-10 {
     min-height: calc(var(--spacing) * 10);
@@ -505,6 +513,20 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -568,10 +590,6 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
-  }
-  .border-t {
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -649,6 +667,12 @@
   .object-center {
     object-position: center;
   }
+  .p-1 {
+    padding: var(--spacing);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -691,6 +715,9 @@
   .py-1 {
     padding-block: var(--spacing);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -702,9 +729,6 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
-  }
-  .pt-3 {
-    padding-top: calc(var(--spacing) * 3);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -821,6 +845,12 @@
   .text-white {
     color: var(--color-white);
   }
+  .text-white\/80 {
+    color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -902,6 +932,62 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         opacity: 100%;
+      }
+    }
+  }
+  .group-hover\/cartoes\:block {
+    &:is(:where(.group\/cartoes):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\/cartoes\:max-h-40 {
+    &:is(:where(.group\/cartoes):hover *) {
+      @media (hover: hover) {
+        max-height: calc(var(--spacing) * 40);
+      }
+    }
+  }
+  .group-hover\/cartoes\:opacity-100 {
+    &:is(:where(.group\/cartoes):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .group-hover\/extrato\:block {
+    &:is(:where(.group\/extrato):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\/extratos\:block {
+    &:is(:where(.group\/extratos):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\/planejamento\:block {
+    &:is(:where(.group\/planejamento):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\/projeto\:block {
+    &:is(:where(.group\/projeto):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\/simulador\:block {
+    &:is(:where(.group\/simulador):hover *) {
+      @media (hover: hover) {
+        display: block;
       }
     }
   }
