@@ -1,7 +1,7 @@
 //  MENU LATERAL
 function carregarMenu() {
     const menu = `
- <nav
+<nav
         class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden overflow-y-auto">
 
         <a href="./dashboard.html" class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
@@ -89,7 +89,7 @@ function carregarMenu() {
                             de Movimentações</a>
                     </li>
                     <li>
-                        <a href="./movimentacaonova.html.html"
+                        <a href="./movimentacaonova.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Movimentação</a>
                     </li>
@@ -190,7 +190,7 @@ function carregarMenu() {
                             de Simulações</a>
                     </li>
                     <li>
-                        <a href="./simuladoinvestimentonovo.html.html"
+                        <a href="./simuladoinvestimentonovo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Simulação</a>
                     </li>
