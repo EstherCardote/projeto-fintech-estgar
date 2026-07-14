@@ -1,7 +1,7 @@
 //  MENU LATERAL
 function carregarMenu() {
     const menu = `
-<nav
+ <nav
         class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden overflow-y-auto">
 
         <a href="./dashboard.html" class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
@@ -57,7 +57,7 @@ function carregarMenu() {
                             de Cartões</a>
                     </li>
                     <li>
-                        <a href="./novocartao.html"
+                        <a href="./cartaonovo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Cartão</a>
                     </li>
@@ -89,7 +89,7 @@ function carregarMenu() {
                             de Movimentações</a>
                     </li>
                     <li>
-                        <a href="./registromovimentacao.html"
+                        <a href="./movimentacaonova.html.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Movimentação</a>
                     </li>
@@ -126,7 +126,7 @@ function carregarMenu() {
                             de Planejamento</a>
                     </li>
                     <li>
-                        <a href="./planejamento.html"
+                        <a href="./planejamentonovo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Planejamento</a>
                     </li>
@@ -157,7 +157,7 @@ function carregarMenu() {
                             de Projetos</a>
                     </li>
                     <li>
-                        <a href="./projetofinanceiro.html"
+                        <a href="./projetofinanceironovo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Projeto</a>
                     </li>
@@ -190,7 +190,7 @@ function carregarMenu() {
                             de Simulações</a>
                     </li>
                     <li>
-                        <a href="./simuladoinvestimento.html"
+                        <a href="./simuladoinvestimentonovo.html.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Simulação</a>
                     </li>
