@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Financeiro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+
+    <div id="menu"></div>
+
+    <!-- INICIO DA TELA -->
+
+    <main class="flex-1 ml-20 p-6">
+        <div class="max-w-4xl mx-auto p-8">
+            <h1 class="text-3xl font-bold text-center text-estgar-roxo-escuro mb-12">Projeto Financeiro</h1>
+            <form id="formProjeto" name="formProjeto" method="post" action="" class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Informações gerais -->
+                    <div>
+                        <label for="nomeProjeto" class="block text-sm font-semibold text-slate-700 mb-2">Nome do
+                            Projeto</label>
+                        <input type="text" id="nomeProjeto" name="nomeProjeto" required
+                            placeholder="Ex: Viagem de férias"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="categoriaProjeto"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Categoria</label>
+                        <select name="categoriaProjeto" id="categoriaProjeto" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                            <option value="" selected disabled>Escolha uma opção</option>
+                            <option value="casa">Casa</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="educacao">Educação</option>
+                            <option value="emergencia">Emergência</option>
+                            <option value="saude">Saúde</option>
+                            <option value="viagem">Viagem</option>
+                            <option value="veiculo">Veículo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="objetivoProjeto" class="block text-sm font-semibold text-slate-700 mb-2">Objetivo do
+                            Projeto</label>
+                        <input type="text" id="objetivoProjeto" name="objetivoProjeto" required
+                            placeholder="Ex: Mais lazer para família"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="descricaoProjeto"
+                            class="block text-sm font-semibold text-slate-700 mb-2">Descrição</label>
+                        <input type="text" id="descricaoProjeto" name="descricaoProjeto"
+                            placeholder="Ex: Viagem para Europa 2027"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="orcamentoTotal" class="block text-sm font-semibold text-slate-700 mb-2">Orçamento
+                            Total (Meta)</label>
+                        <input type="text" id="orcamentoTotal" name="orcamentoTotal" required placeholder="R$ 0,00"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="valorInicial" class="block text-sm font-semibold text-slate-700 mb-2">Valor
+                            Inicial Disponivel</label>
+                        <input type="text" id="valorInicial" name="valorInicial" required placeholder="R$ 0,00"
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="previsaoInicio" class="block text-sm font-semibold text-slate-700 mb-2">Previsão de
+                            Inicio</label>
+                        <input type="date" id="previsaoInicio" name="previsaoInicio" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+                    <div>
+                        <label for="previsaoFim" class="block text-sm font-semibold text-slate-700 mb-2">Previsão de
+                            Fim</label>
+                        <input type="date" id="previsaoFim" name="previsaoFim" required
+                            class="w-full p-3 bg-white border border-gray-400 rounded-xl focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo transition-all text-slate-700">
+                    </div>
+
+                </div>
+
+                <!-- Anexar Documento -->
+                <div class="flex justify-center mt-8">
+                    <input type="file" id="anexoProjeto" name="anexoProjeto" class="hidden" accept="image/*, .pdf">
+
+                    <label for="anexoProjeto"
+                        class="cursor-pointer flex items-center gap-3 p-3 border-2 bg-estgar-bege-escuro border-estgar-roxo text-estgar-roxo font-bold rounded-xl hover:bg-estgar-roxo hover:text-white transition-all w-full md:w-auto"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48" />
+                        </svg> Anexar Documento do projeto (opcional)</label>
+                </div>
+
+                <!-- Botões -->
+                <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
+                    <button type="button" id="btnCancelar" name="btnCancelar"
+                        class="cursor-pointer w-full md:w-auto px-6 py-3 font-semibold text-slate-600 hover:shadow-lg border border-estgar-roxo hover:border-gray-400 rounded-xl transition-all">Cancelar
+                    </button>
+                    <button type="submit" id="btnSalvar" name="btnSalvar"
+                        class="cursor-pointer w-full md:w-auto px-10 py-3 bg-estgar-verde-escuro text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all">Criar
+                        Projeto
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/components.js"></script>
+</body>
+
+</html>
