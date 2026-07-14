@@ -1,3 +1,4 @@
+//  MENU LATERAL
 function carregarMenu() {
     const menu = `
 <nav
@@ -151,4 +152,5 @@ function carregarMenu() {
     document.querySelector("#menu").innerHTML = menu;
 }
 
+// CHAMADA DO MENU LATERAL
 carregarMenu();
