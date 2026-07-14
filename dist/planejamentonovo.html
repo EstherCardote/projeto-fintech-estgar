@@ -30,7 +30,7 @@
                         <label for="limiteGeral" class="label-estgar">Valor Limite
                             Geral</label>
                         <input type="text" id="limiteGeral" name="limiteGeral" placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
 
                     <div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <!-- Limites por Categoria -->
-                <div id="containerLimiteCategoria" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div id="containerLimiteCategoria" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                     <div>
                         <label for="limiteCategoria1" class="label-estgar">Limites
@@ -60,9 +60,9 @@
                         </select>
                     </div>
                     <div>
-                        <label for="valor1" class="label-estgar opacity-0">Valor</label>
+                        <label for="valor1" class="label-estgar ">Valor</label>
                         <input type="text" id="valor1" name="valorCategoria1" placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
 
                     <div>
@@ -75,7 +75,7 @@
                     </div>
                     <div>
                         <input type="text" id="valor2" name="valorCategoria2" placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
 
                     <div>
@@ -88,7 +88,7 @@
                     </div>
                     <div>
                         <input type="text" id="valor3" name="valorCategoria3" placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
 
                 </div>
@@ -101,11 +101,9 @@
                 </div>
                 <!-- BOTÕES -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-2">
-                    <button type="button" id="btnCancelar" name="btnCancelar"
-                        class="btn-secondary">Cancelar
+                    <button type="button" id="btnCancelar" name="btnCancelar" class="btn-secondary">Cancelar
                     </button>
-                    <button type="submit" id="btnSalvar" name="btnSalvar"
-                        class="btn-primary">Salvar
+                    <button type="submit" id="btnSalvar" name="btnSalvar" class="btn-primary">Salvar
                     </button>
 
                 </div>
@@ -120,6 +118,7 @@
     </main>
 
     <script src="./js/components.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

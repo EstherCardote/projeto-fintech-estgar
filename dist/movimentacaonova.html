@@ -46,7 +46,7 @@
                     <div>
                         <label for="valorMovimentacao" class="label-estgar">Valor</label>
                         <input type="text" id="valorMovimentacao" name="valorMovimentacao" placeholder="R$ 0,00"
-                            required class="input-estgar">
+                            required class="input-estgar mascara-moeda">
                     </div>
 
                     <!-- Descrição da Movimentação -->
@@ -186,11 +186,9 @@
 
                 <!-- Botões -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
-                    <button type="button" id="btnCancelar" name="btnCancelar"
-                        class="btn-secondary">Cancelar
+                    <button type="button" id="btnCancelar" name="btnCancelar" class="btn-secondary">Cancelar
                     </button>
-                    <button type="submit" id="btnSalvar" name="btnSalvar"
-                        class="btn-primary">Salvar
+                    <button type="submit" id="btnSalvar" name="btnSalvar" class="btn-primary">Salvar
                     </button>
                 </div>
             </form>

@@ -4,28 +4,37 @@ const btnReceita = document.getElementById("btnReceita");
 const btnDespesa = document.getElementById("btnDespesa");
 const categoria = document.getElementById("categoria");
 const valorMovimentacao = document.getElementById("valorMovimentacao");
+const limiteGeral = document.getElementById("limiteGeral");
 
 // Agora pegamos TODOS os elementos que possuem essa classe
 const camposReceita = document.querySelectorAll(".campo-receita");
 const camposDespesa = document.querySelectorAll(".campo-despesa");
 
-// COLOCANDO MÁSCARA NO INPUT DE VALOR PARA APARECER R$0,00
-valorMovimentacao.addEventListener("input", function () {
+function aplicarMascaraMoeda(input) {
 
-    let valor = valorMovimentacao.value;
+    input.addEventListener("input", function () {
 
-    // Remove tudo que não for número
-    valor = valor.replace(/\D/g, "");
+        let valor = input.value.replace(/\D/g, "");
 
-    // Divide por 100 para criar os centavos
-    valor = Number(valor) / 100;
+        if (!valor) {
+            input.value = "";
+            return;
+        }
 
-    // Atualiza o campo com a máscara
-    valorMovimentacao.value = valor.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL"
+        valor = Number(valor) / 100;
+
+        input.value = valor.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        });
+
     });
 
+}
+
+// Procura todos os inputs com a classe
+document.querySelectorAll(".mascara-moeda").forEach(function (input) {
+    aplicarMascaraMoeda(input);
 });
 
 

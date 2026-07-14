@@ -54,13 +54,13 @@
                         <label for="orcamentoTotal" class="label-estgar">Orçamento
                             Total (Meta)</label>
                         <input type="text" id="orcamentoTotal" name="orcamentoTotal" required placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
                     <div>
                         <label for="valorInicial" class="label-estgar">Valor
                             Inicial Disponivel</label>
                         <input type="text" id="valorInicial" name="valorInicial" required placeholder="R$ 0,00"
-                            class="input-estgar">
+                            class="input-estgar mascara-moeda">
                     </div>
                     <div>
                         <label for="previsaoInicio" class="label-estgar">Previsão de
@@ -90,11 +90,9 @@
 
                 <!-- Botões -->
                 <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-8">
-                    <button type="button" id="btnCancelar" name="btnCancelar"
-                        class="btn-secondary">Cancelar
+                    <button type="button" id="btnCancelar" name="btnCancelar" class="btn-secondary">Cancelar
                     </button>
-                    <button type="submit" id="btnSalvar" name="btnSalvar"
-                        class="btn-primary">Criar
+                    <button type="submit" id="btnSalvar" name="btnSalvar" class="btn-primary">Criar
                         Projeto
                     </button>
                 </div>
@@ -103,6 +101,7 @@
     </main>
 
     <script src="./js/components.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
