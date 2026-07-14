@@ -34,8 +34,16 @@
     --color-estgar-vermelho-escuro: #B54848;
 }
 
+/* ESTILIZAÇÃO DOS INPUT */
 @layer components {
     .input-estgar {
         @apply w-full p-3 bg-white border border-gray-400 rounded-xl text-slate-700 transition-all focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo;
+    }
+}
+
+/*  ESTILIZAÇÃO DOS LABEL */
+@layer components {
+    .label-estgar{
+        @apply block text-sm font-semibold text-slate-700 mb-2;
     }
 }

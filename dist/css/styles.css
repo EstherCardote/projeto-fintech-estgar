@@ -1135,6 +1135,17 @@
     }
   }
 }
+@layer components {
+  .label-estgar {
+    margin-bottom: calc(var(--spacing) * 2);
+    display: block;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-slate-700);
+  }
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
