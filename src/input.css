@@ -21,7 +21,7 @@
     --color-estgar-cinza-500: #6C757D;
     --color-estgar-cinza-700: #495057;
     --color-estgar-cinza-900: #212529;
-    
+
     --color-estgar-laranja: #F39C6B;
 
     --color-estgar-roxo: #8e7dbe;
@@ -32,4 +32,10 @@
 
     --color-estgar-vermelho: #D65A5A;
     --color-estgar-vermelho-escuro: #B54848;
+}
+
+@layer components {
+    .input-estgar {
+        @apply w-full p-3 bg-white border border-gray-400 rounded-xl text-slate-700 transition-all focus:outline-none focus:border-estgar-roxo focus:ring-1 focus:ring-estgar-roxo;
+    }
 }
