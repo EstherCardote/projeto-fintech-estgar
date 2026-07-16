@@ -14,19 +14,35 @@
     <main class="flex-1 ml-20 p-6">
         <div class="max-w-4xl mx-auto p-8">
             <h1 class="page-title">Perfil do usuário</h1>
+            <p class="text-center text-estgar-cinza-500 mb-8">
+                Altere suas informações pessoais e mantenha seus dados atualizados.
+            </p>
 
             <!-- FOTO -->
             <div class="flex flex-col items-center mb-10">
                 <div
-                    class="w-32 h-32 rounded-full bg-estgar-cinza-200 flex items-center justify-center overflow-hidden shadow-md">
+                    class="w-32 h-32 rounded-full bg-estgar-cinza-200 border-4 border-white flex items-center justify-center overflow-hidden shadow-md">
                     <img src="./assets/images/Usuario.jpg" alt="Foto do Usuario" class="w-full h-full object-cover">
                 </div>
-                <label for="fotoPerfilUsuario"
-                    class="mt-4 cursor-pointer text-estgar-roxo font-semibold hover:underline">Alterar
-                    Foto</label>
-                <input type="file" id="fotoPerfilUsuario" class="hidden" accept="image/*">
-                <small>JPG ou PNG
-                    Máximo 5 MB</small>
+                <input type="file" id="fotoPerfilUsuario" name="fotoPerfilUsuario" class="hidden" accept="image/*">
+
+                <div class="flex items-center gap-5 mt-5">
+
+                    <label for="fotoPerfilUsuario"
+                        class="cursor-pointer text-estgar-verde-escuro text-sm font-semibold hover:underline transition-all">
+                        Alterar foto
+                    </label>
+
+                    <button type="button" id="btnRemoverFoto"
+                        class="cursor-pointer text-estgar-vermelho text-sm font-semibold hover:underline transition-all ">
+                        Remover foto
+                    </button>
+
+                </div>
+
+                <small class="mt-3 text-xs text-estgar-cinza-500">
+                    JPG ou PNG • Máximo 5 MB
+                </small>
             </div>
 
             <form action="" id="formPerfilUsuario" name="formPerfilUsuario" method="post" class="space-y-5">
@@ -35,33 +51,41 @@
 
                     <div>
                         <label for="perfilPrimeiroNome" class="label-estgar">Primeiro Nome</label>
-                        <input type="text" id="perfilPrimeiroNome" name="perfilPrimeiroNome" class="input-estgar">
+                        <input type="text" id="perfilPrimeiroNome" name="perfilPrimeiroNome" value="Esther"
+                            class="input-estgar">
                     </div>
 
                     <div>
                         <label for="perfilSobrenome" class="label-estgar">Sobrenome</label>
-                        <input type="text" id="perfilSobrenome" name="perfilSobrenome" class="input-estgar">
+                        <input type="text" id="perfilSobrenome" name="perfilSobrenome" value="Cardote"
+                            class="input-estgar">
                     </div>
 
                     <div>
                         <label for="perfilEmail" class="label-estgar">E-mail</label>
-                        <input type="email" id="perfilEmail" name="perfilEmail" class="input-estgar">
+                        <input type="email" id="perfilEmail" name="perfilEmail" value="exemplo@exemplo.com.br"
+                            class="input-estgar">
                     </div>
 
                     <div>
                         <label for="perfilConfirmarEmail" class="label-estgar">Confirmar E-mail</label>
-                        <input type="email" id="perfilConfirmarEmail" name="perfilConfirmarEmail" class="input-estgar">
+                        <input type="email" id="perfilConfirmarEmail" name="perfilConfirmarEmail"
+                            value="exemplo@exemplo.com.br" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="perfilCpf" class="label-estgar">CPF</label>
-                        <input type="text" id="perfilCpf" name="perfilCpf" class="input-estgar">
+                        <label for="perfilCpf" class="label-estgar">CPF<span
+                                class="blocktext-xs font-normal text-estgar-cinza-500">
+                                (não pode ser alterado)
+                            </span></label>
+                        <input type="text" id="perfilCpf" name="perfilCpf" value="000.000.000-00"
+                            class="input-estgar bg-estgar-cinza-100 text-estgar-cinza-500 cursor-not-allowed" readonly>
                     </div>
 
                     <div>
                         <label for="perfilDataNascimento" class="label-estgar">Data de Nascimento</label>
-                        <input type="date" id="perfilDataNascimento" name="perfilDataNascimento" class="input-estgar"
-                            readonly>
+                        <input type="date" id="perfilDataNascimento" name="perfilDataNascimento" value="1996-10-27"
+                            class="input-estgar">
                     </div>
 
                     <div>
@@ -69,7 +93,7 @@
                         <div class="flex flex-wrap justify-between gap-6">
                             <label for="perfilSexoFeminino" class="flex items-center gap-2 cursor-pointer">
                                 <input type="radio" id="perfilSexoFeminino" name="sexo" value="feminino" required
-                                    class="w-4 h-4 accent-estgar-roxo">
+                                    checked class="w-4 h-4 accent-estgar-roxo">
                                 <span class="text-sm text-slate-700">Feminino</span>
                             </label>
                             <label for="perfilSexoMasculino" class="flex items-center gap-2 cursor-pointer">
@@ -86,20 +110,30 @@
                     </div>
 
                     <div>
-                        <label for="perfilSenha" class="label-estgar">Nova Senha</label>
-                        <input type="password" id="perfilSenha" name="perfilSenha" minlength="8" class="input-estgar">
-                        <span id="perfil-erro-senha" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                        <label for="perfilSenhaAtual" class="label-estgar">Senha Atual</label>
+                        <input type="password" id="perfilSenhaAtual" name="perfilSenhaAtual" minlength="8"
+                            autocomplete="current-password" class="input-estgar">
+                        <span id="perfil-erro-senha-atual"
+                            class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                    </div>
+
+                    <div>
+                        <label for="perfilSenhaNova" class="label-estgar">Nova Senha</label>
+                        <input type="password" id="perfilSenhaNova" name="perfilSenhaNova" minlength="8"
+                            autocomplete="new-password" class="input-estgar">
+                        <span id="perfil-erro-senha-nova" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                     </div>
 
                     <div>
                         <label for="perfilSenhaConfirmar" class="label-estgar">Confirmar Nova Senha</label>
                         <input type="password" id="perfilSenhaConfirmar" name="perfilSenhaConfirmar" minlength="8"
-                            required class="input-estgar">
+                            autocomplete="new-password" class="input-estgar">
                         <span id="perfil-erro-senha-confirmar"
                             class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                     </div>
                 </div>
-                <p class="text-xs text-gray-500">Pelo menos 8 caracteres, uma letra maiúscula e um número.
+                <p class="text-xs text-gray-500">Caso deseje alterar sua senha, informe uma nova senha com pelo menos 8
+                    caracteres, uma letra maiúscula e um número.
                 </p>
 
                 <!-- BOTÕES -->
