@@ -157,7 +157,7 @@ function carregarMenu() {
                             de Projetos</a>
                     </li>
                     <li>
-                        <a href="./projeto-financeiro-novo.html.html"
+                        <a href="./projeto-financeiro-novo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Projeto</a>
                     </li>
@@ -228,7 +228,7 @@ function carregarMenu() {
 
                 <!-- PERFIL -->
                 <li>
-                    <a href="#"
+                    <a href="./perfil-usuario.html"
                         class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
 
                         <span class="text-2xl min-w-8 flex justify-center">

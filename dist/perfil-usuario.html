@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuario</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+    <div id="menu"></div>
+
+    <main class="flex-1 ml-20 p-6">
+        <div class="max-w-4xl mx-auto p-8">
+            <h1 class="page-title">Perfil do usuário</h1>
+
+            <!-- FOTO -->
+            <div class="flex flex-col items-center mb-10">
+                <div
+                    class="w-32 h-32 rounded-full bg-estgar-cinza-200 flex items-center justify-center overflow-hidden shadow-md">
+                    <img src="./assets/images/Usuario.jpg" alt="Foto do Usuario" class="w-full h-full object-cover">
+                </div>
+                <label for="fotoPerfilUsuario"
+                    class="mt-4 cursor-pointer text-estgar-roxo font-semibold hover:underline">Alterar
+                    Foto</label>
+                <input type="file" id="fotoPerfilUsuario" class="hidden" accept="image/*">
+            </div>
+
+            <form action="" id="formPerfilUsuario" name="formPerfilUsuario" method="post" class="space-y-5">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label for="configprimeiroNome" class="label-estgar">Primeiro Nome</label>
+                        <input type="text" id="primeiroNome" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <label for="sobrenome" class="label-estgar">Sobrenome</label>
+                        <input type="text" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <label for="CPF" class="label-estgar">CPF</label>
+                        <input type="text" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <label for="dataNascimento" class="label-estgar">Data de Nascimento</label>
+                        <input type="date" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <label for="email" class="label-estgar">E-mail</label>
+                        <input type="email" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <label for="email" class="label-estgar">Confirmar E-mail</label>
+                        <input type="email" class="input-estgar">
+                    </div>
+
+                    <div>
+                        <span class="block text-sm font-semibold text-slate-700 mb-5">Sexo</span>
+                        <div class="flex flex-wrap justify-between gap-6">
+                            <label for="sexoFeminino" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="sexoFeminino" name="sexo" value="feminino" required
+                                    class="w-4 h-4 accent-estgar-roxo">
+                                <span class="text-sm text-slate-700">Feminino</span>
+                            </label>
+                            <label for="sexoMasculino" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="sexoMasculino" name="sexo" value="masculino" required
+                                    class="w-4 h-4 accent-estgar-roxo">
+                                <span class="text-sm text-slate-700">Masculino</span>
+                            </label>
+                            <label for="sexoOutro" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="sexoOutro" name="sexo" value="outro" required
+                                    class="w-4 h-4 accent-estgar-roxo">
+                                <span class="text-sm text-slate-700">Outros</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="senha" class="label-estgar">Senha</label>
+                        <input type="password" id="senha" name="senha" minlength="8" class="input-estgar">
+                        <span id="erro-senha" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                    </div>
+
+                    <div>
+                        <label for="senhaConfirmar" class="label-estgar">Confirmar Senha</label>
+                        <input type="password" id="senhaConfirmar" name="senhaConfirmar " minlength="8" required
+                            class="input-estgar">
+                        <span id="erro-senha-confirmar" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-0">Pelo menos 8 caracteres, uma letra maiúscula e um número.
+                </p>
+
+                <!-- BOTÕES -->
+                <div class="flex flex-col-reverse md:flex-row justify-end gap-4 mt-2">
+                    <button type="button" id="btnCancelar" name="btnCancelar" class="btn-secondary">Cancelar
+                    </button>
+                    <button type="submit" id="btnSalvar" name="btnSalvar" class="btn-primary">Salvar Alterações
+                    </button>
+
+                </div>
+            </form>
+
+
+        </div>
+    </main>
+
+    <script src="./js/components.js"></script>
+</body>
+
+</html>
