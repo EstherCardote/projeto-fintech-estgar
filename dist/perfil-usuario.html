@@ -25,6 +25,8 @@
                     class="mt-4 cursor-pointer text-estgar-roxo font-semibold hover:underline">Alterar
                     Foto</label>
                 <input type="file" id="fotoPerfilUsuario" class="hidden" accept="image/*">
+                <small>JPG ou PNG
+                    Máximo 5 MB</small>
             </div>
 
             <form action="" id="formPerfilUsuario" name="formPerfilUsuario" method="post" class="space-y-5">
@@ -32,50 +34,51 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <div>
-                        <label for="configprimeiroNome" class="label-estgar">Primeiro Nome</label>
-                        <input type="text" id="primeiroNome" class="input-estgar">
+                        <label for="perfilPrimeiroNome" class="label-estgar">Primeiro Nome</label>
+                        <input type="text" id="perfilPrimeiroNome" name="perfilPrimeiroNome" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="sobrenome" class="label-estgar">Sobrenome</label>
-                        <input type="text" class="input-estgar">
+                        <label for="perfilSobrenome" class="label-estgar">Sobrenome</label>
+                        <input type="text" id="perfilSobrenome" name="perfilSobrenome" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="CPF" class="label-estgar">CPF</label>
-                        <input type="text" class="input-estgar">
+                        <label for="perfilEmail" class="label-estgar">E-mail</label>
+                        <input type="email" id="perfilEmail" name="perfilEmail" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="dataNascimento" class="label-estgar">Data de Nascimento</label>
-                        <input type="date" class="input-estgar">
+                        <label for="perfilConfirmarEmail" class="label-estgar">Confirmar E-mail</label>
+                        <input type="email" id="perfilConfirmarEmail" name="perfilConfirmarEmail" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="email" class="label-estgar">E-mail</label>
-                        <input type="email" class="input-estgar">
+                        <label for="perfilCpf" class="label-estgar">CPF</label>
+                        <input type="text" id="perfilCpf" name="perfilCpf" class="input-estgar">
                     </div>
 
                     <div>
-                        <label for="email" class="label-estgar">Confirmar E-mail</label>
-                        <input type="email" class="input-estgar">
+                        <label for="perfilDataNascimento" class="label-estgar">Data de Nascimento</label>
+                        <input type="date" id="perfilDataNascimento" name="perfilDataNascimento" class="input-estgar"
+                            readonly>
                     </div>
 
                     <div>
                         <span class="block text-sm font-semibold text-slate-700 mb-5">Sexo</span>
                         <div class="flex flex-wrap justify-between gap-6">
-                            <label for="sexoFeminino" class="flex items-center gap-2 cursor-pointer">
-                                <input type="radio" id="sexoFeminino" name="sexo" value="feminino" required
+                            <label for="perfilSexoFeminino" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="perfilSexoFeminino" name="sexo" value="feminino" required
                                     class="w-4 h-4 accent-estgar-roxo">
                                 <span class="text-sm text-slate-700">Feminino</span>
                             </label>
-                            <label for="sexoMasculino" class="flex items-center gap-2 cursor-pointer">
-                                <input type="radio" id="sexoMasculino" name="sexo" value="masculino" required
+                            <label for="perfilSexoMasculino" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="perfilSexoMasculino" name="sexo" value="masculino" required
                                     class="w-4 h-4 accent-estgar-roxo">
                                 <span class="text-sm text-slate-700">Masculino</span>
                             </label>
-                            <label for="sexoOutro" class="flex items-center gap-2 cursor-pointer">
-                                <input type="radio" id="sexoOutro" name="sexo" value="outro" required
+                            <label for="perfilSexoOutro" class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" id="perfilSexoOutro" name="sexo" value="outro" required
                                     class="w-4 h-4 accent-estgar-roxo">
                                 <span class="text-sm text-slate-700">Outros</span>
                             </label>
@@ -83,19 +86,20 @@
                     </div>
 
                     <div>
-                        <label for="senha" class="label-estgar">Senha</label>
-                        <input type="password" id="senha" name="senha" minlength="8" class="input-estgar">
-                        <span id="erro-senha" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                        <label for="perfilSenha" class="label-estgar">Nova Senha</label>
+                        <input type="password" id="perfilSenha" name="perfilSenha" minlength="8" class="input-estgar">
+                        <span id="perfil-erro-senha" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                     </div>
 
                     <div>
-                        <label for="senhaConfirmar" class="label-estgar">Confirmar Senha</label>
-                        <input type="password" id="senhaConfirmar" name="senhaConfirmar " minlength="8" required
-                            class="input-estgar">
-                        <span id="erro-senha-confirmar" class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
+                        <label for="perfilSenhaConfirmar" class="label-estgar">Confirmar Nova Senha</label>
+                        <input type="password" id="perfilSenhaConfirmar" name="perfilSenhaConfirmar" minlength="8"
+                            required class="input-estgar">
+                        <span id="perfil-erro-senha-confirmar"
+                            class="text-red-500 text-xs font-semibold mt-1 hidden"></span>
                     </div>
                 </div>
-                <p class="text-xs text-gray-500 mt-0">Pelo menos 8 caracteres, uma letra maiúscula e um número.
+                <p class="text-xs text-gray-500">Pelo menos 8 caracteres, uma letra maiúscula e um número.
                 </p>
 
                 <!-- BOTÕES -->
@@ -112,7 +116,7 @@
         </div>
     </main>
 
-    <script src="./js/components.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
