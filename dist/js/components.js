@@ -57,7 +57,7 @@ function carregarMenu() {
                             de Cartões</a>
                     </li>
                     <li>
-                        <a href="./cartaonovo.html"
+                        <a href="./cartao-novo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Cartão</a>
                     </li>
@@ -89,7 +89,7 @@ function carregarMenu() {
                             de Movimentações</a>
                     </li>
                     <li>
-                        <a href="./movimentacaonova.html"
+                        <a href="./movimentacao-nova.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Movimentação</a>
                     </li>
@@ -126,7 +126,7 @@ function carregarMenu() {
                             de Planejamento</a>
                     </li>
                     <li>
-                        <a href="./planejamentonovo.html"
+                        <a href="./planejamento-novo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Planejamento</a>
                     </li>
@@ -157,7 +157,7 @@ function carregarMenu() {
                             de Projetos</a>
                     </li>
                     <li>
-                        <a href="./projetofinanceironovo.html"
+                        <a href="./projeto-financeiro-novo.html.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Novo
                             Projeto</a>
                     </li>
@@ -190,7 +190,7 @@ function carregarMenu() {
                             de Simulações</a>
                     </li>
                     <li>
-                        <a href="./simuladoinvestimentonovo.html"
+                        <a href="./simulado-investimento-novo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
                             Simulação</a>
                     </li>
