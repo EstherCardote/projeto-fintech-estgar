@@ -36,6 +36,11 @@
 
 @layer components {
 
+    /* FUNDO DAS PAGINAS */
+    .page {
+        @apply bg-estgar-bege font-sans text-slate-800 min-h-screen flex
+    }
+
     /* TITULO DAS PAGINAS */
     .page-title {
         @apply text-3xl font-bold text-center text-estgar-roxo-escuro mb-12;
