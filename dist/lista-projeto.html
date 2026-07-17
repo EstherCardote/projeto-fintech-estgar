@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Projetos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+
+    <div id="menu"></div>
+
+    <!-- INICIO DA TELA -->
+
+    <main class="flex-1 ml-20 p-6">
+        <div class="max-w-7xl mx-auto p-8">
+            <h1 class="page-title">Projetos Financeiros</h1>
+
+            <div class="flex justify-end mb-8">
+                <a href="./projeto-financeiro-novo.html">
+                    <button class="btn-primary">+ Criar projeto</button>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- PRIMEIRO CARD -->
+                <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col h-full">
+
+                    <!-- Cabeçalho -->
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-bold">Viagem para Europa</h2>
+
+                            <p class="text-sm text-estgar-cinza-500">15/07/2026 até 31/12/2026</p>
+
+                            <p class="text-xs text-estgar-cinza-500">Última atualização: hoje</p>
+                        </div>
+
+                        <span class="bg-estgar-verde-escuro text-white px-4 py-1 rounded-full text-sm font-bold">Em
+                            andamento</span>
+                    </div>
+
+                    <!-- Resumo -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Meta</p>
+                            <strong>R$ 25.000,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Valor guardado</p>
+                            <strong class="text-estgar-verde-escuro">R$ 12.500,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Faltam</p>
+                            <strong class="text-estgar-vermelho">
+                                R$ 12.500,00
+                            </strong>
+                        </div>
+
+                    </div>
+
+                    <!-- Barra de progresso -->
+                    <div class="mt-8">
+
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progresso</span>
+
+                            <span class="text-estgar-roxo">50%</span>
+                        </div>
+
+                        <div class="w-full h-3 rounded-full bg-estgar-cinza-200">
+
+                            <div class="bg-estgar-roxo h-3 rounded-full" style="width:50%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Informações do projeto -->
+                    <div class="space-y-5 mt-8">
+
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Categoria</p>
+                                <strong>✈️ Viagem</strong>
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Objetivo</p>
+                                <strong>Lazer</strong>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-xs text-estgar-cinza-500 mb-1">Descrição</p>
+
+                            <p class="text-sm">Viagem para Europa em Janeiro de 2027.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="flex justify-end gap-3 mt-auto pt-8">
+
+                        <button class="btn-secondary">Editar</button>
+
+                        <button
+                            class="cursor-pointer px-6 py-3 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Excluir</button>
+
+                    </div>
+
+                </div>
+
+                <!-- SEGUNDO CARD -->
+                <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col h-full">
+
+                    <!-- Cabeçalho -->
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-bold">Viagem para Europa</h2>
+
+                            <p class="text-sm text-estgar-cinza-500">15/07/2026 até 31/12/2026</p>
+
+                            <p class="text-xs text-estgar-cinza-500">Última atualização: hoje</p>
+                        </div>
+
+                        <span class="bg-estgar-verde-escuro text-white px-4 py-1 rounded-full text-sm font-bold">Em
+                            andamento</span>
+                    </div>
+
+                    <!-- Resumo -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Meta</p>
+                            <strong>R$ 25.000,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Valor guardado</p>
+                            <strong class="text-estgar-verde-escuro">R$ 12.500,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Faltam</p>
+                            <strong class="text-estgar-vermelho">
+                                R$ 12.500,00
+                            </strong>
+                        </div>
+
+                    </div>
+
+                    <!-- Barra de progresso -->
+                    <div class="mt-8">
+
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progresso</span>
+
+                            <span class="text-estgar-roxo">50%</span>
+                        </div>
+
+                        <div class="w-full h-3 rounded-full bg-estgar-cinza-200">
+
+                            <div class="bg-estgar-roxo h-3 rounded-full" style="width:50%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Informações do projeto -->
+                    <div class="space-y-5 mt-8">
+
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Categoria</p>
+                                <strong>✈️ Viagem</strong>
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Objetivo</p>
+                                <strong>Lazer</strong>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-xs text-estgar-cinza-500 mb-1">Descrição</p>
+
+                            <p class="text-sm">Viagem para Europa em Janeiro de 2027.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="flex justify-end gap-3 mt-auto pt-8">
+
+                        <button class="btn-secondary">Editar</button>
+
+                        <button
+                            class="cursor-pointer px-6 py-3 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Excluir</button>
+
+                    </div>
+
+                </div>
+
+                <!-- TERCEIRO CARD -->
+                <div class="bg-white rounded-2xl shadow-md p-4 flex flex-col h-full">
+
+                    <!-- Cabeçalho -->
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-xl font-bold">Viagem para Europa</h2>
+
+                            <p class="text-sm text-estgar-cinza-500">15/07/2026 até 31/12/2026</p>
+
+                            <p class="text-xs text-estgar-cinza-500">Última atualização: hoje</p>
+                        </div>
+
+                        <span class="bg-estgar-verde-escuro text-white px-4 py-1 rounded-full text-sm font-bold">Em
+                            andamento</span>
+                    </div>
+
+                    <!-- Resumo -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Meta</p>
+                            <strong>R$ 25.000,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Valor guardado</p>
+                            <strong class="text-estgar-verde-escuro">R$ 12.500,00</strong>
+                        </div>
+
+                        <div>
+                            <p class="text-xs text-estgar-cinza-500">Faltam</p>
+                            <strong class="text-estgar-vermelho">
+                                R$ 12.500,00
+                            </strong>
+                        </div>
+
+                    </div>
+
+                    <!-- Barra de progresso -->
+                    <div class="mt-8">
+
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progresso</span>
+
+                            <span class="text-estgar-roxo">50%</span>
+                        </div>
+
+                        <div class="w-full h-3 rounded-full bg-estgar-cinza-200">
+
+                            <div class="bg-estgar-roxo h-3 rounded-full" style="width:50%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Informações do projeto -->
+                    <div class="space-y-5 mt-8">
+
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Categoria</p>
+                                <strong>✈️ Viagem</strong>
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-estgar-cinza-500">Objetivo</p>
+                                <strong>Lazer</strong>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-xs text-estgar-cinza-500 mb-1">Descrição</p>
+
+                            <p class="text-sm">Viagem para Europa em Janeiro de 2027.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="flex justify-end gap-3 mt-auto pt-8">
+
+                        <button class="btn-secondary">Editar</button>
+
+                        <button
+                            class="cursor-pointer px-6 py-3 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Excluir</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+<script src="./js/menu.js"></script>
+
+</html>
