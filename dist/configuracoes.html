@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Sistema</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+
+    <div id="menu"></div>
+
+    <!-- INICIO DA TELA -->
+
+    <main class="flex-1 ml-20 p-6">
+        <div class="max-w-4xl mx-auto p-8">
+            <h1 class="page-title">Configurações do Sistema</h1>
+            <p class="text-center text-estgar-cinza-500 mb-10">
+                Personalize o funcionamento do sistema de acordo com suas preferências.</p>
+
+            <div class="space-y-8">
+                <!-- Aparência -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <h2 class="text-lg font-bold mb-6">
+                        Aparência
+                    </h2>
+
+                    <div class="space-y-6">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="font-semibold">Tema</p>
+
+                                <p class="text-sm text-estgar-cinza-500">Escolha a aparência do sistema.</p>
+                            </div>
+
+                            <select class="input-estgar w-56">
+                                <option>Claro</option>
+                                <option>Escuro (em breve)</option>
+                                <option>Sistema Operacional</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financeiro -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <h2 class="text-lg font-bold mb-6">Configurações Financeiras</h2>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="label-estgar">Moeda</label>
+
+                            <select class="input-estgar">
+                                <option>Real (R$)</option>
+                                <option>Dólar (US$)</option>
+                                <option>Euro (€)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label-estgar">
+                                Primeiro dia do mês financeiro
+                            </label>
+                            <input type="number" class="input-estgar" min="1" max="31" value="1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notificações -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <h2 class="text-lg font-bold mb-6">Notificações</h2>
+
+                    <div class="space-y-5">
+
+                        <label class="flex items-center justify-between">
+
+                            <div>
+                                <p class="font-semibold">Receber alertas de vencimento</p>
+
+                                <p class="text-sm text-estgar-cinza-500">Avisos antes do vencimento das contas.</p>
+
+                            </div>
+
+                            <input type="checkbox" checked class="w-5 h-5">
+
+                        </label>
+
+                        <label class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="font-semibold">Alertas de limite do orçamento</p>
+
+                                <p class="text-sm text-estgar-cinza-500">Avisar quando um planejamento estiver próximo
+                                    do limite.</p>
+
+                            </div>
+
+                            <input type="checkbox" checked class="w-5 h-5">
+
+                        </label>
+
+                        <label class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="font-semibold">Alertas de metas financeiras</p>
+
+                                <p class="text-sm text-estgar-cinza-500">Receba lembretes sobre projetos e metas.</p>
+
+                            </div>
+
+                            <input type="checkbox" checked class="w-5 h-5">
+
+                        </label>
+                    </div>
+                </div>
+                <!-- Dados -->
+                <div class="bg-white rounded-2xl shadow-md p-6">
+
+                    <h2 class="text-lg font-bold mb-6">Dados</h2>
+
+                    <div class="space-y-5">
+
+                        <button class="btn-secondary">Exportar Dados</button>
+
+                        <button
+                            class="cursor-pointer px-6 py-3 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Excluir
+                            todos os dados</button>
+                    </div>
+                </div>
+
+                <!-- Botões -->
+                <div class="flex justify-end gap-4">
+
+                    <button class="btn-secondary">Cancelar</button>
+
+                    <button class="btn-primary">Salvar Configurações</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

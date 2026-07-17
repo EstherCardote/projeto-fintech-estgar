@@ -79,19 +79,19 @@ function carregarMenu() {
                                 d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
                         </svg></span>
                     <span
-                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Extrato</span>
+                        class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Transações</span>
                 </a>
                 <!-- SUBMENU -->
                 <ul class="hidden group-hover/extrato:block ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="#"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
-                            de Movimentações</a>
+                            de transações</a>
                     </li>
                     <li>
                         <a href="./movimentacao-nova.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Nova
-                            Movimentação</a>
+                            transação</a>
                     </li>
                 </ul>
             </li>
@@ -220,7 +220,7 @@ function carregarMenu() {
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Categoria</a>
                     </li>
                     <li>
-                        <a href="./simulado-investimento-novo.html"
+                        <a href="#"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Centro
                             de custo</a>
                     </li>
@@ -236,7 +236,7 @@ function carregarMenu() {
             <ul class="text-sm">
                 <!-- CONFIGURAÇÕES -->
                 <li>
-                    <a href="#"
+                    <a href="./configuracoes.html"
                         class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
 
                         <span class="text-2xl min-w-8 flex justify-center">
