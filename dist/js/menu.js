@@ -216,11 +216,11 @@ function carregarMenu() {
                 <!-- SUBMENU -->
                 <ul class="hidden group-hover/simulador:block ml-12 mt-2 space-y-1 text-xs">
                     <li>
-                        <a href="#"
+                        <a href="./categorias.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Categoria</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./centro-de-custo.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Centro
                             de custo</a>
                     </li>

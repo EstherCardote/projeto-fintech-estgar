@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-estgar-bege font-sans text-slate-800 min-h-screen flex">
+
+    <div id="menu"></div>
+
+    <main class="flex-1 ml-20 p-6">
+
+        <div class="max-w-7xl mx-auto p-8">
+
+            <h1 class="page-title">Categorias</h1>
+
+            <p class="text-center text-estgar-cinza-500 mb-8">
+                Cadastre e gerencie as categorias utilizadas nas movimentações financeiras.
+            </p>
+
+            <!-- Cadastro -->
+            <div class="bg-white rounded-2xl shadow-md p-8 mb-10">
+
+                <h2 class="text-xl font-bold mb-6">Dados da Categoria</h2>
+
+                <form class="space-y-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="label-estgar">Nome</label>
+
+                            <input type="text" class="input-estgar" required placeholder="Ex: Alimentação">
+                        </div>
+
+                        <div>
+                            <label class="label-estgar">Tipo</label>
+
+                            <select class="input-estgar" required>
+                                <option selected disabled>Escolha uma opção</option>
+                                <option>Receita</option>
+                                <option>Despesa</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="label-estgar">Natureza</label>
+
+                            <select class="input-estgar" required>
+                                <option selected disabled>Escolha uma opção</option>
+                                <option>Fixa</option>
+                                <option>Variável</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <label class="label-estgar">Descrição</label>
+
+                        <textarea rows="3" class="input-estgar resize-none" placeholder="Descrição opcional"></textarea>
+                    </div>
+
+                    <div class="flex justify-end gap-4">
+                        <button type="reset" class="btn-secondary">Cancelar</button>
+
+                        <button type="submit" class="btn-primary">Salvar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Lista -->
+            <div class="bg-white rounded-2xl shadow-md p-8">
+
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold">Categorias cadastradas</h2>
+
+                    <input type="text" placeholder="Pesquisar..." class="input-estgar w-72">
+                </div>
+
+                <div class="overflow-x-auto">
+
+                    <table class="w-full">
+
+                        <thead>
+                            <tr class="border-b text-left">
+
+                                <th class="py-3">Nome</th>
+
+                                <th>Tipo</th>
+
+                                <th>Natureza</th>
+
+                                <th>Status</th>
+
+                                <th>Movimentações</th>
+
+                                <th>Última utilização</th>
+
+                                <th class="text-right">Ações</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="border-b hover:bg-estgar-bege">
+
+                                <td class="py-4 font-medium">Alimentação</td>
+
+                                <td>
+                                    <span class="text-estgar-vermelho font-semibold">Despesa</span>
+                                </td>
+
+                                <td>
+                                    Variável
+                                </td>
+
+                                <td>
+                                    <span class="bg-estgar-verde-escuro text-white px-3 py-1 rounded-full text-xs">Ativo</span>
+                                </td>
+
+                                <td>324</td>
+
+                                <td>Hoje</td>
+
+                                <td>
+
+                                    <div class="flex justify-end gap-3">
+
+                                        <button class="btn-secondary">Editar</button>
+
+                                        <button
+                                            class="cursor-pointer px-5 py-2 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Inativar</button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="border-b hover:bg-estgar-bege">
+
+                                <td class="py-4 font-medium">Salário
+                                <td>
+
+                                    <span class="text-estgar-verde-escuro font-semibold">Receita</span>
+
+                                </td>
+
+                                <td>
+                                    Fixa
+                                </td>
+
+                                <td>
+
+                                    <span class="bg-estgar-verde-escuro text-white px-3 py-1 rounded-full text-xs">Ativo</span>
+
+                                </td>
+
+                                <td>48</td>
+
+                                <td>01/07/2026</td>
+
+                                <td>
+
+                                    <div class="flex justify-end gap-3">
+                                        <button class="btn-secondary">Editar</button>
+
+                                        <button
+                                            class="cursor-pointer px-5 py-2 rounded-xl border border-estgar-vermelho text-estgar-vermelho font-semibold hover:bg-estgar-vermelho hover:text-white transition-all">Inativar</button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="hover:bg-estgar-bege">
+
+                                <td class="py-4 font-medium">Bônus</td>
+
+                                <td>
+
+                                    <span class="text-estgar-verde-escuro font-semibold">Receita</span>
+
+                                </td>
+
+                                <td>
+                                    Variável
+                                </td>
+
+                                <td>
+
+                                    <span class="bg-estgar-cinza-500 text-white px-3 py-1 rounded-full text-xs">Inativo</span>
+
+                                </td>
+
+                                <td>6</td>
+
+                                <td>Jan/2026</td>
+
+                                <td>
+
+                                    <div class="flex justify-end gap-3">
+
+                                        <button class="btn-secondary">Editar</button>
+
+                                        <button
+                                            class="cursor-pointer px-5 py-2 rounded-xl border border-estgar-verde-escuro text-estgar-verde-escuro font-semibold hover:bg-estgar-verde-escuro hover:text-white transition-all">Reativar
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>
