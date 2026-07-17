@@ -1,7 +1,7 @@
 //  MENU LATERAL
 function carregarMenu() {
     const menu = `
-<nav
+    <nav
         class="fixed left-0 top-0 h-full bg-estgar-roxo w-20 hover:w-64 transition-all duration-300 z-50 group flex flex-col py-8 shadow-xl overflow-x-hidden overflow-y-auto">
 
         <a href="./dashboard.html" class="mb-12 flex justify-start items-center w-full px-6 min-h-10">
@@ -52,7 +52,7 @@ function carregarMenu() {
                 <!-- SUBMENU -->
                 <ul class="hidden group-hover/cartoes:block ml-12 mt-2 space-y-1 text-xs">
                     <li>
-                        <a href="#"
+                        <a href="./lista-cartoes.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
                             de Cartões</a>
                     </li>
@@ -251,6 +251,7 @@ function carregarMenu() {
         </div>
 
     </nav>
+
 `;
 
     document.querySelector("#menu").innerHTML = menu;
