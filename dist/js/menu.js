@@ -185,7 +185,7 @@ function carregarMenu() {
                 <!-- SUBMENU -->
                 <ul class="hidden group-hover/simulador:block ml-12 mt-2 space-y-1 text-xs">
                     <li>
-                        <a href="#"
+                        <a href="./lista-simulados-salvos.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
                             de Simulações</a>
                     </li>

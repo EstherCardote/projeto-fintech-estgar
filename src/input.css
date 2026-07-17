@@ -9,10 +9,10 @@
     --color-estgar-amarelo: #F4C95D;
     --color-estgar-azul: #5B8DEF;
 
+    --color-estgar-bege: #f9f6f2;
+    --color-estgar-bege-claro: #f8f4ef;
     --color-estgar-bege: #f1e3d3;
     --color-estgar-bege-escuro: #f2d0a9;
-
-    --color-estgar-branco: #FFFFFF;
 
     --color-estgar-cinza-50: #F8F9FA;
     --color-estgar-cinza-100: #F1F3F5;
@@ -23,6 +23,9 @@
     --color-estgar-cinza-900: #212529;
 
     --color-estgar-laranja: #F39C6B;
+
+    --color-estgar-rosa: #daa49a;
+    --color-estgar-rosa-escuro: #c67baa;
 
     --color-estgar-roxo: #8e7dbe;
     --color-estgar-roxo-escuro: #6F5DA8;
@@ -43,7 +46,7 @@
 
     /* TITULO DAS PAGINAS */
     .page-title {
-        @apply text-3xl font-bold text-center text-estgar-roxo-escuro mb-12;
+        @apply text-3xl font-bold text-center text-estgar-roxo-escuro mb-10;
     }
 
     /*  ESTILIZAÇÃO DOS LABEL */
