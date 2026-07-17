@@ -38,7 +38,7 @@ function carregarMenu() {
             <!-- CARTÕES -->
             <li class="group/cartoes relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -50,7 +50,7 @@ function carregarMenu() {
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Cartões</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/cartoes:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="./lista-cartoes.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
@@ -64,10 +64,10 @@ function carregarMenu() {
                 </ul>
             </li>
 
-            <!-- EXTRATO -->
-            <li class="group/extrato relative">
+            <!-- TRANSAÇÕES -->
+            <li class="group/transacao relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -82,7 +82,7 @@ function carregarMenu() {
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Transações</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/extrato:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="#"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
@@ -99,7 +99,7 @@ function carregarMenu() {
             <!-- PLANEJAMENTO -->
             <li class="group/planejamento relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -119,7 +119,7 @@ function carregarMenu() {
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Planejamento</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/planejamento:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="./lista-planejamento.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
@@ -136,7 +136,7 @@ function carregarMenu() {
             <!-- PROJETO -->
             <li class="group/projeto relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -150,7 +150,7 @@ function carregarMenu() {
                         Financeiro</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/projeto:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="./lista-projeto.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
@@ -166,7 +166,7 @@ function carregarMenu() {
             <!-- SIMULADOR DE INVESTIMENTO -->
             <li class="group/simulador relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -183,7 +183,7 @@ function carregarMenu() {
                         de Investimento</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/simulador:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="./lista-simulados-salvos.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Lista
@@ -200,7 +200,7 @@ function carregarMenu() {
             <!-- CADASTROS -->
             <li class="group/simulador relative">
                 <a href="#"
-                    class="flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
+                    class="menu-toggle flex items-center gap-4 px-2 py-3 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-all">
                     <span class="text-2xl min-w-8 flex justify-center"><svg xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -214,7 +214,7 @@ function carregarMenu() {
                         class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold whitespace-nowrap">Cadastros</span>
                 </a>
                 <!-- SUBMENU -->
-                <ul class="hidden group-hover/simulador:block ml-12 mt-2 space-y-1 text-xs">
+                <ul class="submenu hidden ml-12 mt-2 space-y-1 text-xs">
                     <li>
                         <a href="./categorias.html"
                             class="block p-2 text-white hover:bg-white/30 hover:text-slate-900 rounded-xl transition-opacity duration-300 whitespace-nowrap">Categoria</a>
@@ -289,3 +289,28 @@ function carregarMenu() {
 
 // CHAMADA DO MENU LATERAL
 carregarMenu();
+
+// ABRIR APENAS UM SUBMENU POR VEZ
+document.querySelectorAll(".menu-toggle").forEach(menu => {
+
+    menu.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const submenuAtual = this.nextElementSibling;
+
+        // Fecha todos os outros submenus
+        document.querySelectorAll(".submenu").forEach(submenu => {
+
+            if (submenu !== submenuAtual) {
+                submenu.classList.add("hidden");
+            }
+
+        });
+
+        // Abre/Fecha o submenu clicado
+        submenuAtual.classList.toggle("hidden");
+
+    });
+
+});
